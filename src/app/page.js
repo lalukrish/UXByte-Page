@@ -1,3 +1,10 @@
 export default function Home() {
-  return <div>lets start !!!!!!!!</div>;
+  return (
+    <div className="">
+      <ul>
+        <li>heor</li>
+        <li>body</li>
+      </ul>
+    </div>
+  );
 }
