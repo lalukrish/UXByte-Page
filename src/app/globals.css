@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -16,12 +10,49 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
+@font-face {
+  font-family: "Satoshi-Black";
+  src: url("/fonts/Satoshi-Black.otf") format("opentype");
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url("/fonts/Satoshi-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-BlackItalic";
+  src: url("/fonts/Satoshi-BlackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("/fonts/Satoshi-Medium.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("/fonts/Satoshi-Medium.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Satoshi-MediumItalic";
+  src: url("/fonts/Satoshi-MediumItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+body {
+  
+  color: black;
+  font-family: "Satoshi-Medium";
+  /* font-size: 16px;  */
 }
