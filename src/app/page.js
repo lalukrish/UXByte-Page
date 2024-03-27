@@ -4,7 +4,7 @@ export default function Home() {
       <ul>
         <li>hero</li>
         <li>body</li>
-      </ul>
+      </ul> 
     </div>
   );
 }
