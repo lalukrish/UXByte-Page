@@ -1,7 +1,18 @@
+import { BsFillLightningChargeFill } from "react-icons/bs";
+
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center justify-center mt-14">
-      <div className="flex items-center justify-center mb-2">
+    <div
+      className="flex flex-col items-center justify-center "
+      style={{
+        backgroundImage:
+          "radial-gradient(circle, #240247, #0f0f0f 50%, transparent 100%)",
+        backgroundSize: "100%", // Adjust the size as needed
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="flex items-center justify-center mb-2 mt-14">
         <img
           src="assets/Vector.png"
           alt="UXByte Logo"
@@ -9,7 +20,7 @@ const Hero = () => {
         />
         <p className="text-center text-xl">Welcome to UXByte</p>
       </div>
-      <div className="text-center">
+      <div className="text-center ">
         <h1
           className="text-[296px] font-bold text-transparent"
           style={{ WebkitTextStroke: "1px rgba(255, 255, 255, 0.2)" }}
@@ -32,6 +43,12 @@ const Hero = () => {
         From sleek websites &<br></br> intuitive apps we empower your brand to
         thrive in the ever-evolving digital landscape.{" "}
       </div>
+      <button className="bg-white text-black py-3 px-4 flex rounded-lg rwz ">
+        Let's Connect
+        <span className=" mx-2 my-1 ">
+          <BsFillLightningChargeFill />
+        </span>
+      </button>
     </div>
   );
 };
