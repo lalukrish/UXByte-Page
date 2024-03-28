@@ -12,7 +12,7 @@ const About = () => {
 <div className='grid grid-cols-3  '>
     <div className='grid col-span-2'>
 
-    <ul className="list-disc ml-8 text-lg">
+    <ul className="list-disc ml-8 text-xl">
   <li className="mb-4 font-light">
     <span className="text-purple-300 font-bold">Passionate Technologists:</span> We're a team that gets fired up about innovation and creating awesome tech.
   </li>

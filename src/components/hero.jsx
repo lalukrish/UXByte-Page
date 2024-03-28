@@ -22,7 +22,7 @@ const Hero = () => {
         </span>
         the Experience.
       </div>
-      <div className="text-xl my-4 text-center">
+      <div className="text-xl my-4 text-center text-s">
         We bridge the gap between cutting-edge design and powerful development.
         From sleek websites &<br></br> intuitive apps we empower your brand to
         thrive in the ever-evolving digital landscape.{" "}
