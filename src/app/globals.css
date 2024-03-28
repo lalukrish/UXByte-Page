@@ -40,6 +40,24 @@
   src: url("/fonts/Satoshi-MediumItalic.otf") format("opentype");
 }
 
+.primary_button {
+ 
+  color: black;
+  background-color: #FFFFFF; 
+  font-weight: 500;
+  border-radius: 0.375rem; 
+  font-size: 0.875rem; 
+  padding: 0.5rem 1rem; 
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  
+  &:hover {
+    background-color: #E5E5E5; 
+  }
+  }
+
+
 body {
   color: white;
   font-family: "Satoshi-Medium";
