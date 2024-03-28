@@ -1,14 +1,14 @@
 import Hero from "@/components/hero";
 import About from "@/components/About";
 import LetsTalk from "@/components/LetsTalk";
+// import Services from "@/components/Services";
 
 export default function Home() {
   return (
     <div className="">
-      <ul>
-        <Hero />
-      </ul>
+      <Hero />
       <About />
+      {/* <Services /> */}
       <LetsTalk />
     </div>
   );
