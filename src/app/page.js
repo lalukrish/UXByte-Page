@@ -1,4 +1,6 @@
 import Hero from "@/components/hero";
+import About from "@/components/About";
+import LetsTalk from "@/components/LetsTalk";
 
 export default function Home() {
   return (
@@ -6,6 +8,8 @@ export default function Home() {
       <ul>
         <Hero />
       </ul>
+      <About />
+      <LetsTalk />
     </div>
   );
 }

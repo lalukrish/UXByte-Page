@@ -58,7 +58,7 @@ const Footer = () => {
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
-                  <h2 className="mb-6 text-2xl font-medium	  text-gray-400 ">Menu</h2>
+                  <h2 className="mb-6 text-xl font-light	  text-gray-400 ">Menu</h2>
                   <ul className=" dark:text-gray-400 font-medium">
                       <li className="mb-4">
                           <a href="" className="hover:underline">Home</a>
@@ -81,7 +81,7 @@ const Footer = () => {
                   </ul>
               </div>
               <div>
-                  <h2 className="mb-6 text-2xl font-light	  text-gray-400">Our Services</h2>
+                  <h2 className="mb-6 text-xl font-light text-gray-400">Our Services</h2>
                   <ul className=" dark:text-gray-400 font-medium">
                       <li className="mb-4">
                           <p> UI UX Designs</p>
@@ -105,7 +105,7 @@ const Footer = () => {
                   </ul>
               </div>
               <div>
-                  <h2 className="mb-6 text-2xl   text-gray-400">Contact Us</h2>
+                  <h2 className="mb-6 text-xl font-light text-gray-400">Contact Us</h2>
                   <ul className=" dark:text-gray-400 font-medium">
                       <li className="mb-4">
                           <a href="tel:+918883367373" className="hover:underline 	">Phone: +91 88833 67373</a>

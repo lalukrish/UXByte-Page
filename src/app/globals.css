@@ -18,41 +18,31 @@
 @font-face {
   font-family: "Satoshi-Bold";
   src: url("/fonts/Satoshi-Bold.otf") format("opentype");
-  font-weight: bold;
-  font-style: normal;
 }
 
 @font-face {
   font-family: "Satoshi-BlackItalic";
   src: url("/fonts/Satoshi-BlackItalic.otf") format("opentype");
-  font-weight: 900;
-  font-style: italic;
 }
 
 @font-face {
   font-family: "Satoshi-Medium";
   src: url("/fonts/Satoshi-Medium.otf") format("opentype");
-  font-weight: 900;
-  font-style: italic;
 }
 
 @font-face {
   font-family: "Satoshi-Medium";
   src: url("/fonts/Satoshi-Medium.otf") format("opentype");
-  font-weight: 900;
-  font-style: italic;
 }
 
 @font-face {
   font-family: "Satoshi-MediumItalic";
   src: url("/fonts/Satoshi-MediumItalic.otf") format("opentype");
-  font-weight: 900;
-  font-style: italic;
 }
 
 body {
   color: white;
-  font-family: "Satoshi-Medium";
+  font-family: "Satoshi";
   /* font-size: 16px;  */
   background-color: #0f0f0f;
 }
