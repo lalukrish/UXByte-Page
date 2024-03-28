@@ -6,12 +6,13 @@ import { HiOutlineSun } from "react-icons/hi2";
 const Navbar = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
-  useEffect(() => {
-    console.log("Navbar open state:", isNavbarOpen);
-  }, [isNavbarOpen]);
+  // useEffect(() => {
+  //   console.log("Navbar open state:", isNavbarOpen);
+  // }, [isNavbarOpen]);
 
   const toggleNavbar = () => {
     setIsNavbarOpen(!isNavbarOpen);
+    console.log("state:", isNavbarOpen);
   };
 
   console.log("state:", isNavbarOpen);
@@ -27,13 +28,12 @@ const Navbar = () => {
         </a>
 
         <button
-          data-collapse-toggle="navbar-default"
           type="button"
           className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 size-20"
           aria-controls="navbar-default"
-          aria-expanded={isNavbarOpen ? "true" : "false"} // Corrected to reflect the current state
-          onChange={() => {
-            toggleNavbar(); // Correctly calling the toggleNavbar function
+          aria-expanded="true"
+          onClick={() => {
+            toggleNavbar();
             console.log("click");
           }}
         >
