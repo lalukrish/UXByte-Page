@@ -1,10 +1,11 @@
+import About from "@/components/About";
+import LetsTalk from "@/components/LetsTalk";
+
 export default function Home() {
   return (
     <div className="">
-      <ul>
-        <li>hero</li>
-        <li>body</li>
-      </ul> 
+      <About/>
+      <LetsTalk/>
     </div>
   );
 }
