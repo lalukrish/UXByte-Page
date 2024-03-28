@@ -6,8 +6,8 @@ const Hero = () => {
       className="flex flex-col items-center justify-center "
       style={{
         backgroundImage:
-          "radial-gradient(circle, #240247, #0f0f0f 50%, transparent 100%)",
-        backgroundSize: "100%", // Adjust the size as needed
+          "radial-gradient(ellipse farthest-side at center, #240247, #0f0f0f 90%, transparent 100%)",
+        backgroundSize: "100% 100%", // Adjust the width and height as needed
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
       }}
