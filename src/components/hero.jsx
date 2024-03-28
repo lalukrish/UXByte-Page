@@ -43,7 +43,7 @@ const Hero = () => {
         From sleek websites &<br></br> intuitive apps we empower your brand to
         thrive in the ever-evolving digital landscape.{" "}
       </div>
-      <button className="bg-white text-black py-3 px-4 flex rounded-lg rwz ">
+      <button className="bg-white text-black py-3 px-4 flex rounded-lg rwz hover:bg-gray-200 ">
         Let's Connect
         <span className=" mx-2 my-1 ">
           <BsFillLightningChargeFill />
