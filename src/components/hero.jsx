@@ -1,16 +1,28 @@
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center justify-center mt-14">
-      <div className="flex items-center justify-center mb-2">
-        <img
-          src="assets/Vector.png"
-          alt="UXByte Logo"
-          className="h-6 w-6 mr-2"
-        />
-        <p className="text-center text-xl">Welcome to UXByte</p>
-      </div>
+    <div className="flex flex-col  justify-center mt-14">
+<div className="text-center">
+  <div className="flex items-center justify-center mb-2">
+    <img
+      src="assets/Vector.png"
+      alt="UXByte Logo"
+      className="h-6 w-6 mr-2"
+    />
+    <p className="text-xl">Welcome to UXByte</p>
+  </div>
+
+  <div>
+    <h1 className="text-[296px] font-bold text-transparent" style={{ WebkitTextStroke: '1px rgba(255, 255, 255, 0.2)' }}>
+      UXBYTE
+    </h1>
+  </div>
+</div>
+
+
       <div className="text-center">
-        <h1 className="md:text-[296px] font-bold">UXBYTE</h1>
+      {/* <h1 className="md:text-[296px] font-bold" style={{ WebkitTextStroke: '1px rgba(255, 255, 255, 0.2)', color: 'transparent' }}>
+      UXBYTE
+  </h1> */}
       </div>
       <div className="text-4xl">
         <span className="bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent">
