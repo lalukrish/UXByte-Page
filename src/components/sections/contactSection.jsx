@@ -3,9 +3,30 @@ import React from "react";
 const ContactSection = () => {
   return (
     <>
+    <div className="" >
+      <h2 className="text-2xl font-medium ml-20 ">Let's Create</h2>
+      <h2 className="ml-20">Experiences!</h2><br></br>
+      <h4 className="ml-20">Let's talk !</h4>
+      <div>
+        <h5 className="mt-20 ml-20">
+          <a href="">info@uxbyte.com</a>
+        </h5><br></br>
+
+        <h5 className="mt-25 ml-20">
+          <a href="">+91  88833   67373</a><br></br>
+          <a href="">+91  95392   46945</a><br></br>
+        </h5><br></br>
+        <h5 className="mt-30 ml-20">
+          <a href="">Kochi,India</a>
+          
+        </h5>
+
+      </div>
+    </div>
+     <div className="flex justify-end">
       <a
         href="#"
-        className="block max-w-sm p-6 bg-gray-100 border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+        className="block max-w-sm p-6 bg-gray-100 border border-grey-600 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
       >
         <div>
           <h2 className="text-black">I'm Interested In</h2>
@@ -90,6 +111,7 @@ const ContactSection = () => {
           </button>
         </form>
       </a>
+      </div>
     </>
   );
 };
