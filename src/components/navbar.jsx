@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { HiOutlineSun } from "react-icons/hi2";
 
@@ -20,7 +21,13 @@ const Navbar = () => {
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img src="assets/logo.png" className="h-10" alt=" Logo" />
+            <Image
+              src="https://drive.google.com/file/d/1AQveEhzX-VdG_6zwiYh5kQX3SO3lzETD/view?usp=drive_link"
+              className="h-10"
+              alt=" Logo"
+              width={40}
+              height={40}
+            />
           </a>
           <div className="flex gap-5 md:order-2 space-x-3 md:space-x-0  items-center rtl:space-x-reverse">
             <HiOutlineSun size={"24px"} />

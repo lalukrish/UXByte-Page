@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -15,7 +16,11 @@ const Footer = () => {
               href="#"
               className="flex items-center space-x-3 rtl:space-x-reverse"
             >
-              <img src="/assets/main-log.png" width={40} height={40} />
+              <Image
+                src="https://drive.google.com/file/d/1AQveEhzX-VdG_6zwiYh5kQX3SO3lzETD/view?usp=drive_link"
+                width={40}
+                height={40}
+              />
               <span className="self-center text-2xl  font-extrabold  whitespace-nowrap dark:text-white">
                 UXByte
               </span>
