@@ -3,8 +3,8 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="mx-20" id="about">
-      <div className="text-6xl font-extrabold	mb-8">
+    <div className="md:mx-20" id="about">
+      <div className="text-6xl font-extrabold	mb-8 items-start">
         <span className="bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent">
           About
         </span>
@@ -51,11 +51,11 @@ const About = () => {
 
         <div className="grid col-span-1 justify-center">
           <Image
-            src="https://drive.google.com/file/d/1AQveEhzX-VdG_6zwiYh5kQX3SO3lzETD/view?usp=drive_link"
+            src="https://res.cloudinary.com/dvjjzsilz/image/upload/v1711784029/atwww59mdcbnvxvpxmei.png"
             className="h-72"
             alt=""
-            width={40}
-            height={40}
+            width={300}
+            height={70}
           />
         </div>
       </div>

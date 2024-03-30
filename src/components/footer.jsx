@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -17,13 +18,14 @@ const Footer = () => {
               className="flex items-center space-x-3 rtl:space-x-reverse"
             >
               <Image
-                src="https://drive.google.com/file/d/1AQveEhzX-VdG_6zwiYh5kQX3SO3lzETD/view?usp=drive_link"
-                width={40}
+                src="https://res.cloudinary.com/dvjjzsilz/image/upload/v1711783336/e5c19dbcnmyg9h682icc.png"
+                alt=" Logo"
+                width={140}
                 height={40}
               />
-              <span className="self-center text-2xl  font-extrabold  whitespace-nowrap dark:text-white">
+              {/* <span className="self-center text-2xl  font-extrabold  whitespace-nowrap dark:text-white">
                 UXByte
-              </span>
+              </span> */}
             </a>
             <div className="flex mt-8 sm:justify-center">
               <a
@@ -77,34 +79,34 @@ const Footer = () => {
               <h2 className="mb-6 text-xl font-light	  text-gray-400 ">Menu</h2>
               <ul className=" dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="" className="hover:underline">
+                  <Link href="" className="hover:underline">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="" className="hover:underline">
+                  <Link href="" className="hover:underline">
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="" className="hover:underline">
+                  <Link href="" className="hover:underline">
                     Why us
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="" className="hover:underline">
+                  <Link href="" className="hover:underline">
                     Works
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="" className="hover:underline">
+                  <Link href="" className="hover:underline">
                     Services
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="" className="hover:underline">
+                  <Link href="" className="hover:underline">
                     Let's Talk
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

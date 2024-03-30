@@ -1,7 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["drive.google.com"],
+    // domains: [],
+    remotePatterns: [
+      { hostname: "drive.google.com" },
+      { hostname: "res.cloudinary.com" },
+    ],
   },
 };
 

@@ -7,6 +7,7 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    --custom-text-6xl-font-size: 4rem; /* Adjust the value as needed */
   }
 }
 
@@ -61,4 +62,5 @@ body {
   font-family: "Satoshi";
   /* font-size: 16px;  */
   background-color: #0f0f0f;
+  width: 100%;
 }

@@ -12,11 +12,11 @@ const WhyUs = () => {
         <div className="grid grid-cols-4 justify-center mt-12 gap-6">
           <div className="flex flex-col items-center justify-center">
             <Image
-              src="https://drive.google.com/file/d/1T7afgOYDaGQofr6zdS3YUtNE4y3kR36U/view?usp=sharing"
+              src="/assets/pie-and-charts.svg"
               alt=""
               className="filter brightness-100 hover:brightness-75"
-              width={40}
-              height={40}
+              width={180}
+              height={200}
             />
             <h1 className="text-xl font-semibold my-4">
               Future Proof Execution
@@ -29,11 +29,11 @@ const WhyUs = () => {
 
           <div className="flex flex-col items-center justify-center">
             <Image
-              src="https://drive.google.com/file/d/1AQveEhzX-VdG_6zwiYh5kQX3SO3lzETD/view?usp=drive_link"
+              src="/assets/smart-people.svg"
               alt=""
               className="filter brightness-100 hover:brightness-75"
-              width={40}
-              height={40}
+              width={180}
+              height={200}
             />
             <h1 className="text-xl font-semibold my-4">
               Streamlined Efficiency
@@ -46,11 +46,11 @@ const WhyUs = () => {
 
           <div className="flex flex-col items-center justify-center">
             <Image
-              src="https://drive.google.com/file/d/1AQveEhzX-VdG_6zwiYh5kQX3SO3lzETD/view?usp=drive_link"
+              src="/assets/designer-working.svg"
               alt=""
               className="filter brightness-100 hover:brightness-75"
-              width={40}
-              height={40}
+              width={180}
+              height={200}
             />
             <h1 className="text-xl font-semibold my-4">
               Design that Captivates
@@ -63,11 +63,11 @@ const WhyUs = () => {
 
           <div className="flex flex-col items-center justify-center">
             <Image
-              src="https://drive.google.com/file/d/1AQveEhzX-VdG_6zwiYh5kQX3SO3lzETD/view?usp=drive_link"
+              src="/assets/business-deal.svg"
               alt=""
               className="filter brightness-100 hover:brightness-75"
-              width={40}
-              height={40}
+              width={180}
+              height={200}
             />
             <h1 className="text-xl font-semibold my-4">
               End-to-End Partnership
