@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="">
       <Hero />
-      <About />
+      {/* <About /> */}
       {/* <WhyUs /> */}
       {/* <Works /> */}
       {/* <Services /> */}

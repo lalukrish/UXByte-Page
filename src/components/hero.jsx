@@ -12,32 +12,41 @@ const Hero = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className="flex items-center justify-center mb-2 mt-16">
-        <img
-          src="assets/Vector.png"
-          alt="UXByte Logo"
-          className="h-6 w-6 mr-2"
-        />
-        <p className="text-center text-xl">Welcome to UXByte</p>
+      <div className="flex items-center justify-center mb-64 absolute">
+        <div className="flex md:mb-64">
+          <img
+            src="assets/Vector.png"
+            alt="UXByte Logo"
+            className="h-6 w-6 mr-2"
+          />
+          <p className="text-center text-xl ">Welcome to UXByte</p>
+        </div>
       </div>
       <div className="text-center mt-4 ">
         <h1
-          className="text-8xl font-bold text-transparent ml-0 md:text-7xl"
+          className="text-8xl font-bold text-transparent ml-0 md:text-7xl mt-36 md:mt-16"
           style={{ WebkitTextStroke: "1px rgba(255, 255, 255, 0.2)" }}
         >
           UXBYTE
         </h1>
       </div>
-      <div className="md:text-4xl md:3xl mt-4">
-        <span className="bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent">
-          Code{" "}
-        </span>
-        the Future.{" "}
-        <span className="bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent">
-          Craft{" "}
-        </span>
-        the Experience.
+      <div className="flex flex-col md:flex-row items-center justify-center  ">
+        <div className="flex flex-col md:flex-row text-3xl items-center">
+          <span>
+            <span className="bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent ">
+              Code{" "}
+            </span>
+            the Future.{" "}
+          </span>
+          <span>
+            <span className="bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent">
+              Craft
+            </span>{" "}
+            the Experience.
+          </span>
+        </div>
       </div>
+
       <div className="text-xl my-4 text-center text-s">
         We bridge the gap between cutting-edge design and powerful development.
         From sleek websites &<br></br> intuitive apps we empower your brand to
