@@ -22,14 +22,17 @@ const Navbar = () => {
           >
             <img src="assets/logo.png" className="h-10" alt=" Logo" />
           </a>
-          <div className="flex gap-5 md:order-2 space-x-3 md:space-x-0  items-center rtl:space-x-reverse">
+          <div
+            className="flex gap-5 md:order-2 space-x-3 md:space-x-0  items-center rtl:space-x-reverse cursor-pointer"
+            onClick={console.log("hi")}
+          >
             <HiOutlineSun size={"24px"} />
             <button type="button" className="primary_button">
               Let's Connect
             </button>
             <button
               data-collapse-toggle="navbar-sticky"
-              type="button"
+              // type="button"
               className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
               aria-controls="navbar-sticky"
               aria-expanded="false"
@@ -54,7 +57,9 @@ const Navbar = () => {
             </button>
           </div>
           <div
-            className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${
+              open ? "" : "hidden"
+            }`}
             id="navbar-sticky"
           >
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-regular border  rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  ">

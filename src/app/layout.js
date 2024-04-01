@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <div>
+    <div className="min-h-screen  flex-col grid gap-2">
       <Navbar />
       {children}
       <Footer />
