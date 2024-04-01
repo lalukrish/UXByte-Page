@@ -1,17 +1,25 @@
-import Image from "next/image";
 import React from "react";
 
 const About = () => {
   return (
-    <div className="md:mx-20" id="about">
-      <div className="text-6xl font-extrabold	mb-8 items-start">
+    <div className="md:mx-20 mx-4" id="about">
+      <div className="text-5xl font-extrabold mb-8 flex items-center">
         <span className="bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent">
           About
         </span>
+        <div className=" md:block ml-4 gap-2">
+          <img
+            src="https://res.cloudinary.com/dvjjzsilz/image/upload/v1711784029/atwww59mdcbnvxvpxmei.png"
+            className="h-44 w-48 md:w-48"
+            alt=""
+            width={32}
+            height={20}
+          />
+        </div>
       </div>
 
-      <div className="grid grid-cols-3  ">
-        <div className="grid col-span-2">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
+        <div className="col-span-1  mb-20">
           <ul className="list-disc ml-8 text-xl">
             <li className="mb-4 font-light">
               <span className="text-purple-300 font-bold">
@@ -47,16 +55,6 @@ const About = () => {
               communication and a product tailored to your specific needs.
             </li>
           </ul>
-        </div>
-
-        <div className="grid col-span-1 justify-center">
-          <Image
-            src="https://res.cloudinary.com/dvjjzsilz/image/upload/v1711784029/atwww59mdcbnvxvpxmei.png"
-            className="h-72"
-            alt=""
-            width={300}
-            height={70}
-          />
         </div>
       </div>
 
