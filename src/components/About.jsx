@@ -10,7 +10,7 @@ const About = () => {
         <div className=" md:block ml-4 gap-2">
           <img
             src="https://res.cloudinary.com/dvjjzsilz/image/upload/v1711784029/atwww59mdcbnvxvpxmei.png"
-            className="h-44 w-48 md:w-48"
+            className="h-38 w-36 md:w-48"
             alt=""
             width={32}
             height={20}
