@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { IoMdMail } from "react-icons/io";
 import { MdLocalPhone } from "react-icons/md";
@@ -14,29 +16,68 @@ const ContactSection = () => {
       <div className="col-span-2">
         <div className="flex flex-col justify-center">
           <h2 className="text-5xl font-bold ml-20">Let's Create</h2>
-          <h2 className="bg-gradient-to-r from-white  via-black-100 to-black-200 text-transparent bg-clip-text text-5xl font-bold ml-20">Experiences !</h2><br></br>
+          <h2 className="bg-gradient-to-r from-white  via-black-100 to-black-200 text-transparent bg-clip-text text-5xl font-bold ml-20">
+            Experiences !
+          </h2>
+          <br></br>
           <h4 className="text-2xl font-normal ml-20">Let's talk !</h4>
           <div>
-            <h5 className="text-xl font-medium mt-20 ml-20" style={{ fontSize: '20px', fontWeight: '500' }}>
-              <a href="mailto:info@uxbyte.com" className="flex"><IoMdMail style={{ width: '32px', height: '32px' }} />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;info@uxbyte.com</a>
-            </h5><br></br>
-            <h5 className="text-xl font-medium mt-25 ml-20" style={{ fontSize: '20px', fontWeight: '500' }}>
-              <div className="flex mt-2]"><MdLocalPhone style={{ width: '30px', height: '30px' }}/>&nbsp;&nbsp;&nbsp;&nbsp;
-              +91 88833 67373<br />&nbsp;&nbsp;&nbsp;&nbsp;
-              +91 95392 46945
-              </div>
-            </h5><br></br>
-            <h5 className="text-xl font-medium mt-30 ml-20" style={{ fontSize: '20px', fontWeight: '500' }}>
-             <a href="" className="flex" ><HiLocationMarker style={{ width: '30px', height: '30px' }}/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kochi, India </a>
+            <h5
+              className="text-xl font-medium mt-20 ml-20"
+              style={{ fontSize: "20px", fontWeight: "500" }}
+            >
+              <a href="mailto:info@uxbyte.com" className="flex">
+                <IoMdMail style={{ width: "32px", height: "32px" }} />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;info@uxbyte.com
+              </a>
             </h5>
-          </div><br></br><br></br><br></br>
-          <div className="ml-20 flex-auto" style={{ display: 'flex', marginRight: '5px'}}>
-            <a href=""><FaFacebookF style={{ width: '30px', height: '30px' }}/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href=""><FaInstagram style={{ width: '30px', height: '30px' }}/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href=""><FaLinkedinIn style={{ width: '30px', height: '30px' }}/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href=""><LuGithub style={{ width: '30px', height: '30px' }}/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br></br>
+            <h5
+              className="text-xl font-medium mt-25 ml-20"
+              style={{ fontSize: "20px", fontWeight: "500" }}
+            >
+              <div className="flex mt-2]">
+                <MdLocalPhone style={{ width: "30px", height: "30px" }} />
+                &nbsp;&nbsp;&nbsp;&nbsp; +91 88833 67373
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp; +91 95392 46945
+              </div>
+            </h5>
+            <br></br>
+            <h5
+              className="text-xl font-medium mt-30 ml-20"
+              style={{ fontSize: "20px", fontWeight: "500" }}
+            >
+              <a href="" className="flex">
+                <HiLocationMarker style={{ width: "30px", height: "30px" }} />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kochi, India{" "}
+              </a>
+            </h5>
           </div>
-
+          <br></br>
+          <br></br>
+          <br></br>
+          <div
+            className="ml-20 flex-auto"
+            style={{ display: "flex", marginRight: "5px" }}
+          >
+            <a href="">
+              <FaFacebookF style={{ width: "30px", height: "30px" }} />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="">
+              <FaInstagram style={{ width: "30px", height: "30px" }} />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="">
+              <FaLinkedinIn style={{ width: "30px", height: "30px" }} />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="">
+              <LuGithub style={{ width: "30px", height: "30px" }} />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </div>
         </div>
       </div>
 
@@ -44,14 +85,19 @@ const ContactSection = () => {
       <div className="col-span-3">
         <div className="max-w-2xl p-16 bg-gray-600  border border-gray-600 rounded-lg shadow  dark:bg-gray-800 dark:border-gray-700">
           <div>
-            <h2 className="text-white font-normal text-2xl ">I'm Interested In</h2>
+            <h2 className="text-white font-normal text-2xl ">
+              I'm Interested In
+            </h2>
           </div>
           <br />
           <form>
             <div className="grid gap-6 mb-6 md:grid-cols-2">
               {/* Input fields */}
               <div>
-                <label htmlFor="first_name" className="block mb-2 text-sm font-medium text-white dark:text-white">
+                <label
+                  htmlFor="first_name"
+                  className="block mb-2 text-sm font-medium text-white dark:text-white"
+                >
                   Name
                 </label>
                 <input
@@ -63,7 +109,10 @@ const ContactSection = () => {
                 />
               </div>
               <div>
-                <label htmlFor="last_name" className="block mb-2 text-sm font-medium text-white dark:text-white">
+                <label
+                  htmlFor="last_name"
+                  className="block mb-2 text-sm font-medium text-white dark:text-white"
+                >
                   Email
                 </label>
                 <input
@@ -75,7 +124,10 @@ const ContactSection = () => {
                 />
               </div>
               <div>
-                <label htmlFor="company" className="block mb-2 text-sm font-medium text-white dark:text-white">
+                <label
+                  htmlFor="company"
+                  className="block mb-2 text-sm font-medium text-white dark:text-white"
+                >
                   Mobile
                 </label>
                 <input
@@ -87,7 +139,10 @@ const ContactSection = () => {
                 />
               </div>
               <div>
-                <label htmlFor="phone" className="block mb-2 text-sm font-medium text-white dark:text-white">
+                <label
+                  htmlFor="phone"
+                  className="block mb-2 text-sm font-medium text-white dark:text-white"
+                >
                   Mobile
                 </label>
                 <input
@@ -100,7 +155,10 @@ const ContactSection = () => {
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block mb-2 text-sm font-medium text-white dark:text-white">
+                <label
+                  htmlFor="message"
+                  className="block mb-2 text-sm font-medium text-white dark:text-white"
+                >
                   Message
                 </label>
                 {/* <textarea
@@ -117,17 +175,39 @@ const ContactSection = () => {
                   required
                 />
               </div>
-            </div><br></br><br></br><br></br>
+            </div>
+            <br></br>
+            <br></br>
+            <br></br>
             <div className="flex flex-col items-center justify-center">
               <button
                 type="submit"
+<<<<<<< HEAD
                 className="flex text-black bg-white hover:bg-white-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-white dark:hover:bg-white dark:focus:ring-blue-800" style={{ fontSize: '20px', fontWeight: '200' }}>
                 <BsFillSendFill className="flex"  style={{ width: '20px', height: '20px' }}/>&nbsp;&nbsp;Send Message
+=======
+                className="flex text-black bg-white hover:bg-white-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                style={{ fontSize: "20px", fontWeight: "200" }}
+              >
+                <BsFillSendFill style={{ width: "20px", height: "20px" }} />
+                &nbsp;&nbsp;Send Message
+>>>>>>> 24880b9ba326a25414215af11039b76bd72d3d1b
               </button>
             </div>
           </form>
         </div>
+<<<<<<< HEAD
       </div><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+=======
+      </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+>>>>>>> 24880b9ba326a25414215af11039b76bd72d3d1b
     </div>
   );
 };
