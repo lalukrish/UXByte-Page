@@ -182,23 +182,15 @@ const ContactSection = () => {
             <div className="flex flex-col items-center justify-center">
               <button
                 type="submit"
-<<<<<<< HEAD
-                className="flex text-black bg-white hover:bg-white-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-white dark:hover:bg-white dark:focus:ring-blue-800" style={{ fontSize: '20px', fontWeight: '200' }}>
-                <BsFillSendFill className="flex"  style={{ width: '20px', height: '20px' }}/>&nbsp;&nbsp;Send Message
-=======
                 className="flex text-black bg-white hover:bg-white-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 style={{ fontSize: "20px", fontWeight: "200" }}
               >
                 <BsFillSendFill style={{ width: "20px", height: "20px" }} />
                 &nbsp;&nbsp;Send Message
->>>>>>> 24880b9ba326a25414215af11039b76bd72d3d1b
               </button>
             </div>
           </form>
         </div>
-<<<<<<< HEAD
-      </div><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-=======
       </div>
       <br></br>
       <br></br>
@@ -207,7 +199,6 @@ const ContactSection = () => {
       <br></br>
       <br></br>
       <br></br>
->>>>>>> 24880b9ba326a25414215af11039b76bd72d3d1b
     </div>
   );
 };
