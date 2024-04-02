@@ -20,14 +20,13 @@ const Hero = () => {
         />
         <p className="text-center text-lg">Welcome to UXByte</p>
       </div>
-      <div className="text-center mt-4 flex flex-col">
-        <h1
-          className="text-4xl md:text-9xl font-bold text-transparent whitespace-nowrap"
-          style={{ WebkitTextStroke: "1px rgba(255, 255, 255, 0.2)" }}
-        >
-          UXBYTE
-        </h1>
-      </div>
+      <h1
+        className="text-7xl md:text-9xl font-bold text-transparent whitespace-nowrap"
+        style={{ WebkitTextStroke: "1px rgba(255, 255, 255, 0.2)" }}
+      >
+        UXBYTE
+      </h1>
+
       <div className="md:absolute md:mt-60 lg:mt-64">
         <div className="flex flex-col md:flex-row items-center justify-center text-center">
           <div className="flex flex-col md:flex-row text-4xl items-center">
