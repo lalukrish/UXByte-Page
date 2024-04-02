@@ -87,8 +87,33 @@ const ContactSection = () => {
           <div>
             <h2 className="text-white font-normal text-2xl ">
               I'm Interested In
-            </h2>
+            </h2><br></br><br />
           </div>
+          <div className="flex gap-2">
+          <button style={{ fontSize: '0.66rem', border: '1px solid white', backgroundColor: 'grey', color: 'white' }} className="hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-white-300 rounded-lg text-xs sm:text-sm px-2 py-1 sm:px-4 sm:py-2 text-center dark:bg-gray-600 dark:hover:bg-white dark:focus:ring-white dark:hover:text-black">
+            UI UX Design
+          </button>
+            <button style={{ fontSize: '0.65rem', border: '1px solid white', backgroundColor: 'grey', color: 'white' }} className="hover:bg-white-800 focus:ring-4 focus:outline-none focus:ring-white-300 rounded-lg text-xs sm:text-sm px-2 py-1 sm:px-4 sm:py-2 text-center dark:bg-gray-600 dark:hover:bg-white dark:focus:ring-white">
+              Web Tech
+            </button>
+            <button style={{ fontSize: '0.65rem', border: '1px solid white', backgroundColor: 'grey', color: 'white' }} className="hover:bg-white-800 focus:ring-4 focus:outline-none focus:ring-white-300 rounded-lg text-xs sm:text-sm px-2 py-1 sm:px-4 sm:py-2 text-center dark:bg-gray-600 dark:hover:bg-white dark:focus:ring-white">
+              Mobile Apps
+            </button>
+            <button style={{ fontSize: '0.65rem', border: '1px solid white', backgroundColor: 'grey', color: 'white' }} className="hover:bg-white-800 focus:ring-4 focus:outline-none focus:ring-white-300 rounded-lg text-xs sm:text-sm px-2 py-1 sm:px-4 sm:py-2 text-center dark:bg-gray-600 dark:hover:bg-white dark:focus:ring-white">
+              Digital Marketing
+            </button>
+            <button style={{ fontSize: '0.65rem', border: '1px solid white', backgroundColor: 'grey', color: 'white' }} className="hover:bg-white-800 focus:ring-4 focus:outline-none focus:ring-white-300 rounded-lg text-xs sm:text-sm px-2 py-1 sm:px-4 sm:py-2 text-center dark:bg-gray-600 dark:hover:bg-white dark:focus:ring-white">
+              SEO
+            </button>
+            <button style={{ fontSize: '0.6rem', border: '1px solid white', backgroundColor: 'grey', color: 'white' }} className="hover:bg-white-800 focus:ring-4 focus:outline-none focus:ring-white-300 rounded-lg text-xs sm:text-sm px-2 py-1 sm:px-4 sm:py-2 text-center dark:bg-gray-600 dark:hover:bg-white dark:focus:ring-white">
+              Other
+            </button>
+          </div>
+
+
+
+
+
           <br />
           <form>
             <div className="grid gap-6 mb-6 md:grid-cols-2">
@@ -103,7 +128,7 @@ const ContactSection = () => {
                 <input
                   type="text"
                   id="first_name"
-                  className="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  className="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white "
                   placeholder=""
                   required
                 />
@@ -118,7 +143,7 @@ const ContactSection = () => {
                 <input
                   type="text"
                   id="last_name"
-                  className="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  className="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg   block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white "
                   placeholder=""
                   required
                 />
@@ -133,7 +158,7 @@ const ContactSection = () => {
                 <input
                   type="text"
                   id="company"
-                  className="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  className="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg   block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white "
                   placeholder=""
                   required
                 />
@@ -148,13 +173,13 @@ const ContactSection = () => {
                 <input
                   type="tel"
                   id="phone"
-                  className="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  className="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg   block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white "
                   placeholder=""
                   pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
                   required
                 />
               </div>
-              <div>
+              <div className="">
                 <label
                   htmlFor="message"
                   className="block mb-2 text-sm font-medium text-white dark:text-white"
@@ -170,7 +195,7 @@ const ContactSection = () => {
                 <input
                   type="text"
                   id=""
-                  className="w-lg bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  className="w-lg bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg   block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white "
                   placeholder=""
                   required
                 />
@@ -180,25 +205,17 @@ const ContactSection = () => {
             <br></br>
             <br></br>
             <div className="flex flex-col items-center justify-center">
-              <button
-                type="submit"
-<<<<<<< HEAD
-                className="flex text-black bg-white hover:bg-white-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-white dark:hover:bg-white dark:focus:ring-blue-800" style={{ fontSize: '20px', fontWeight: '200' }}>
-                <BsFillSendFill className="flex"  style={{ width: '20px', height: '20px' }}/>&nbsp;&nbsp;Send Message
-=======
-                className="flex text-black bg-white hover:bg-white-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                style={{ fontSize: "20px", fontWeight: "200" }}
-              >
-                <BsFillSendFill style={{ width: "20px", height: "20px" }} />
-                &nbsp;&nbsp;Send Message
->>>>>>> 24880b9ba326a25414215af11039b76bd72d3d1b
-              </button>
+            <button
+                    type="submit"
+                    className="flex items-center justify-center text-black bg-white hover:bg-white-800 focus:ring-4 focus:outline-none focus:ring-white-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-white dark:hover:bg-white dark:focus:ring-white"
+                    style={{ fontSize: "20px", fontWeight: "200" }}
+                  >
+                    <BsFillSendFill className="mr-2" style={{ width: "20px", height: "20px" }} />
+                    Send Message
+                  </button>
             </div>
           </form>
         </div>
-<<<<<<< HEAD
-      </div><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-=======
       </div>
       <br></br>
       <br></br>
@@ -207,7 +224,6 @@ const ContactSection = () => {
       <br></br>
       <br></br>
       <br></br>
->>>>>>> 24880b9ba326a25414215af11039b76bd72d3d1b
     </div>
   );
 };
