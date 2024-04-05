@@ -11,6 +11,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { BsFillSendFill } from "react-icons/bs";
 const ContactSection = () => {
   return (
+    <div className="mt-[-120]">
     <div className="grid grid-cols-5 gap-10 mt-40 ml-10">
       {/* Left Grid for Text Content */}
       <div className="col-span-2">
@@ -83,11 +84,11 @@ const ContactSection = () => {
 
       {/* Right Grid for Card Block */}
       <div className="col-span-3">
-        <div className="max-w-2xl p-16 bg-gray-600   rounded-lg shadow  dark:bg-gray-800 " style={{backgroundColor:"#3f3f3f"}}>
+        <div className="max-w-2xl p-16 bg-gray-600   rounded-lg shadow  dark:bg-gray-800 " style={{borderRadius:"25px", backgroundColor:"#3f3f3f"}}>
           <div>
             <h2 className="text-white font-normal text-2xl ">
               I'm Interested In
-            </h2><br></br><br />
+            </h2><br></br>
           </div>
           <div className="flex gap-2">
           <button style={{ fontSize: '0.66rem', border: '1px solid white', backgroundColor: "#3f3f3f3f", color: 'white' }} className="hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-white-300 rounded-lg text-xs sm:text-sm px-2 py-1 sm:px-4 sm:py-2 text-center dark:bg-gray-600 dark:hover:bg-white dark:focus:ring-white dark:hover:text-black">
@@ -115,7 +116,7 @@ const ContactSection = () => {
 
 
           <br />
-          <form>
+          <form className="max-w-full">
             <div className="grid gap-6 mb-6 md:grid-cols-2">
               {/* Input fields */}
               <div>
@@ -179,21 +180,7 @@ const ContactSection = () => {
                   required
                 />
               </div>
-              {/* <div className="">
-                <label
-                  htmlFor="message"
-                  className="block mb-2 text-sm font-medium text-white dark:text-white"
-                >
-                  Message
-                </label>
-                <input
-                  type="text"
-                  id=""
-                  className="w-lg bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg   block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white "
-                  placeholder=""
-                  required
-                />
-              </div> */}
+              
             <div className="">
                 <label
                   htmlFor="message"
@@ -225,12 +212,12 @@ const ContactSection = () => {
           </form>
         </div>
       </div>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+      
       <br></br>
       
+      
+      
+    </div>
     </div>
   );
 };
