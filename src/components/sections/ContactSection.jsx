@@ -83,29 +83,29 @@ const ContactSection = () => {
 
       {/* Right Grid for Card Block */}
       <div className="col-span-3">
-        <div className="max-w-2xl p-16 bg-gray-600  border border-gray-600 rounded-lg shadow  dark:bg-gray-800 dark:border-gray-700">
+        <div className="max-w-2xl p-16 bg-gray-600   rounded-lg shadow  dark:bg-gray-800 " style={{backgroundColor:"#3f3f3f"}}>
           <div>
             <h2 className="text-white font-normal text-2xl ">
               I'm Interested In
             </h2><br></br><br />
           </div>
           <div className="flex gap-2">
-          <button style={{ fontSize: '0.66rem', border: '1px solid white', backgroundColor: 'grey', color: 'white' }} className="hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-white-300 rounded-lg text-xs sm:text-sm px-2 py-1 sm:px-4 sm:py-2 text-center dark:bg-gray-600 dark:hover:bg-white dark:focus:ring-white dark:hover:text-black">
+          <button style={{ fontSize: '0.66rem', border: '1px solid white', backgroundColor: "#3f3f3f3f", color: 'white' }} className="hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-white-300 rounded-lg text-xs sm:text-sm px-2 py-1 sm:px-4 sm:py-2 text-center dark:bg-gray-600 dark:hover:bg-white dark:focus:ring-white dark:hover:text-black">
             UI UX Design
           </button>
-            <button style={{ fontSize: '0.65rem', border: '1px solid white', backgroundColor: 'grey', color: 'white' }} className="hover:bg-white-800 focus:ring-4 focus:outline-none focus:ring-white-300 rounded-lg text-xs sm:text-sm px-2 py-1 sm:px-4 sm:py-2 text-center dark:bg-gray-600 dark:hover:bg-white dark:focus:ring-white">
+            <button style={{ fontSize: '0.65rem', border: '1px solid white', backgroundColor: "#3f3f3f3f", color: 'white' }} className="hover:bg-white-800 focus:ring-4 focus:outline-none focus:ring-white-300 rounded-lg text-xs sm:text-sm px-2 py-1 sm:px-4 sm:py-2 text-center dark:bg-gray-600 dark:hover:bg-white dark:focus:ring-white">
               Web Tech
             </button>
-            <button style={{ fontSize: '0.65rem', border: '1px solid white', backgroundColor: 'grey', color: 'white' }} className="hover:bg-white-800 focus:ring-4 focus:outline-none focus:ring-white-300 rounded-lg text-xs sm:text-sm px-2 py-1 sm:px-4 sm:py-2 text-center dark:bg-gray-600 dark:hover:bg-white dark:focus:ring-white">
+            <button style={{ fontSize: '0.65rem', border: '1px solid white', backgroundColor: "#3f3f3f3f", color: 'white' }} className="hover:bg-white-800 focus:ring-4 focus:outline-none focus:ring-white-300 rounded-lg text-xs sm:text-sm px-2 py-1 sm:px-4 sm:py-2 text-center dark:bg-gray-600 dark:hover:bg-white dark:focus:ring-white">
               Mobile Apps
             </button>
-            <button style={{ fontSize: '0.65rem', border: '1px solid white', backgroundColor: 'grey', color: 'white' }} className="hover:bg-white-800 focus:ring-4 focus:outline-none focus:ring-white-300 rounded-lg text-xs sm:text-sm px-2 py-1 sm:px-4 sm:py-2 text-center dark:bg-gray-600 dark:hover:bg-white dark:focus:ring-white">
+            <button style={{ fontSize: '0.65rem', border: '1px solid white', backgroundColor: "#3f3f3f3f", color: 'white' }} className="hover:bg-white-800 focus:ring-4 focus:outline-none focus:ring-white-300 rounded-lg text-xs sm:text-sm px-2 py-1 sm:px-4 sm:py-2 text-center dark:bg-gray-600 dark:hover:bg-white dark:focus:ring-white">
               Digital Marketing
             </button>
-            <button style={{ fontSize: '0.65rem', border: '1px solid white', backgroundColor: 'grey', color: 'white' }} className="hover:bg-white-800 focus:ring-4 focus:outline-none focus:ring-white-300 rounded-lg text-xs sm:text-sm px-2 py-1 sm:px-4 sm:py-2 text-center dark:bg-gray-600 dark:hover:bg-white dark:focus:ring-white">
+            <button style={{ fontSize: '0.65rem', border: '1px solid white', backgroundColor: "#3f3f3f3f", color: 'white' }} className="hover:bg-white-800 focus:ring-4 focus:outline-none focus:ring-white-300 rounded-lg text-xs sm:text-sm px-2 py-1 sm:px-4 sm:py-2 text-center dark:bg-gray-600 dark:hover:bg-white dark:focus:ring-white">
               SEO
             </button>
-            <button style={{ fontSize: '0.6rem', border: '1px solid white', backgroundColor: 'grey', color: 'white' }} className="hover:bg-white-800 focus:ring-4 focus:outline-none focus:ring-white-300 rounded-lg text-xs sm:text-sm px-2 py-1 sm:px-4 sm:py-2 text-center dark:bg-gray-600 dark:hover:bg-white dark:focus:ring-white">
+            <button style={{ fontSize: '0.6rem', border: '1px solid white', backgroundColor: "#3f3f3f3f", color: 'white' }} className="hover:bg-white-800 focus:ring-4 focus:outline-none focus:ring-white-300 rounded-lg text-xs sm:text-sm px-2 py-1 sm:px-4 sm:py-2 text-center dark:bg-gray-600 dark:hover:bg-white dark:focus:ring-white">
               Other
             </button>
           </div>
@@ -128,7 +128,7 @@ const ContactSection = () => {
                 <input
                   type="text"
                   id="first_name"
-                  className="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white "
+                  className="border border-white text-white text-sm rounded-lg block w-full p-2.5 dark:border-white dark:placeholder-gray-400 dark:text-white " style={{backgroundColor:"#3f3f3f3f"}}
                   placeholder=""
                   required
                 />
@@ -143,7 +143,7 @@ const ContactSection = () => {
                 <input
                   type="text"
                   id="last_name"
-                  className="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg   block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white "
+                  className="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg   block w-full p-2.5 dark:border-white dark:placeholder-gray-400 dark:text-white " style={{backgroundColor:"#3f3f3f3f"}}
                   placeholder=""
                   required
                 />
@@ -158,7 +158,7 @@ const ContactSection = () => {
                 <input
                   type="text"
                   id="company"
-                  className="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg   block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white "
+                  className="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg   block w-full p-2.5 dark:border-white dark:placeholder-gray-400 dark:text-white " style={{backgroundColor:"#3f3f3f3f"}}
                   placeholder=""
                   required
                 />
@@ -168,30 +168,24 @@ const ContactSection = () => {
                   htmlFor="phone"
                   className="block mb-2 text-sm font-medium text-white dark:text-white"
                 >
-                  Mobile
+                  Subject
                 </label>
                 <input
                   type="tel"
                   id="phone"
-                  className="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg   block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white "
+                  className="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg   block w-full p-2.5  dark:border-white dark:placeholder-gray-400 dark:text-white " style={{backgroundColor:"#3f3f3f3f"}}
                   placeholder=""
                   pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
                   required
                 />
               </div>
-              <div className="">
+              {/* <div className="">
                 <label
                   htmlFor="message"
                   className="block mb-2 text-sm font-medium text-white dark:text-white"
                 >
                   Message
                 </label>
-                {/* <textarea
-                  id="message"
-                  rows="3"
-                  className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder=""
-                ></textarea> */}
                 <input
                   type="text"
                   id=""
@@ -199,11 +193,25 @@ const ContactSection = () => {
                   placeholder=""
                   required
                 />
+              </div> */}
+            <div className="">
+                <label
+                  htmlFor="message"
+                  className="block mb-2 text-sm font-medium text-white dark:text-white"
+                >
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  rows="3"
+                  className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300   dark:border-white dark:placeholder-gray-400 dark:text-white " style={{backgroundColor:"#3f3f3f3f"}}
+                  placeholder=""
+                ></textarea>
               </div>
+
             </div>
             <br></br>
-            <br></br>
-            <br></br>
+            
             <div className="flex flex-col items-center justify-center">
             <button
                     type="submit"
@@ -222,8 +230,7 @@ const ContactSection = () => {
       <br></br>
       <br></br>
       <br></br>
-      <br></br>
-      <br></br>
+      
     </div>
   );
 };
