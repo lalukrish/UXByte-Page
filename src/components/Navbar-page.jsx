@@ -9,9 +9,10 @@ const Navbarpage = () => {
   const toggle = () => {
     setOpen(!open);
   };
+  console.log("tog", toggle, open);
   return (
     <>
-      <Navbar toggle={toggle} open={open} />
+      <Navbar />
     </>
   );
 };
