@@ -1,6 +1,12 @@
 .service-item {
   opacity: 0;
   animation: fadeIn 0.5s ease-in-out forwards;
+  transition: opacity 0.5s ease-in-out; /* Add a transition for smooth hover effect */
+}
+
+.service-item:hover {
+  opacity: 0; /* Reset opacity to 0 on hover */
+  animation: fadeIn 0.5s ease-in-out forwards; /* Trigger the fade-in animation on hover */
 }
 
 @keyframes fadeIn {

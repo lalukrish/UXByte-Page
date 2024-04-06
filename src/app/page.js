@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div suppressHydrationWarning={false}>
       <Navbar />
-      <Hero />
+      {/* <Hero /> */}
       <About />
       <WhyUs />
       <Works />
