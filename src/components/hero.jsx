@@ -56,13 +56,21 @@ const Hero = () => {
         </div>
       </div>
       <div className="mt-6">
-        <button className="bg-white text-black py-3 px-4 flex rounded-lg hover:bg-gray-200 my-4">
+        <button
+          className="bg-white text-black py-3 px-4 flex rounded-lg hover:bg-gray-200 my-4"
+          onClick={() => {
+            console.log("object");
+          }}
+        >
           Let's Connect
           <span className="mx-2 my-1">
             <BsFillLightningChargeFill />
           </span>
         </button>
       </div>
+      <button className="bg-white" onClick={() => console.log("object")}>
+        hi
+      </button>
     </div>
   );
 };
