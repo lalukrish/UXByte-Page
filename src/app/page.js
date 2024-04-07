@@ -67,7 +67,7 @@ export default function Home() {
         workLocation={workLocation}
         workLetstalk={workLetstalk}
       />
-      {/* <Hero /> */}
+      <Hero />
       <About />
       <WhyUs />
       <Works />
