@@ -1,65 +1,82 @@
 import React from "react";
 
 const Works = () => {
+  // const crossesContainerStyle = {
+  //   "@media (max-width: 640px)": {
+  //     flexDirection: "column",
+  //   },
+  //   "@media (min-width: 768px)": {
+  //     flexDirection: "row",
+  //   },
+  // };
+
   return (
-    <div
-      className="flex flex-col items-center my-10 mx-4 sm:mx-10"
-      id="works_id"
-    >
-      <div className="text-3xl sm:text-5xl font-extrabold">
+    <div className="hidden md:block">
+      <div className="text-6xl font-extrabold  text-center" id="works_id">
         <span className="bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent">
           Works{" "}
         </span>
       </div>
-
-      <div className="flex flex-col sm:flex-row justify-between w-full max-w-lg mt-8">
-        {/* Foodtech */}
-        <div className="flex flex-col items-center justify-center border border-t-0 border-r-0 border-l-0 border-dashed border-b-2 border-gray-500 p-4 sm:p-8">
-          <span className="text-lg sm:text-2xl">Foodtech</span>
-        </div>
-
-        {/* Center dashed line */}
-        <div className="hidden sm:block flex items-center">
-          <hr className="border-dashed border-r-2 border-gray-500 h-12" />
-        </div>
-
-        {/* Fintech */}
-        <div className="flex flex-col items-center justify-center border border-t-0 border-r-0 border-l-0 border-dashed border-b-2 border-gray-500 p-4 sm:p-8">
-          <span className="text-lg sm:text-2xl">Fintech</span>
-        </div>
-      </div>
-
-      <div className="flex flex-col sm:flex-row justify-between w-full max-w-lg mt-8">
-        {/* Traveltech */}
-        <div className="flex flex-col items-center justify-center border border-t-0 border-r-0 border-l-0 border-b-2 border-dashed border-gray-500 p-4 sm:p-8">
-          <span className="text-lg sm:text-2xl">Traveltech</span>
-        </div>
-
-        {/* Center dashed line */}
-        <div className="hidden sm:block flex items-center">
-          <hr className="border-dashed border-r-2 border-gray-500 h-12" />
-        </div>
-
-        {/* Healthcare */}
-        <div className="flex flex-col items-center justify-center border border-t-0 border-r-0 border-l-0 border-b-2 border-dashed border-gray-500 p-4 sm:p-8">
-          <span className="text-lg sm:text-2xl">Healthcare</span>
-        </div>
-      </div>
-
-      <div className="flex flex-col sm:flex-row justify-between w-full max-w-lg mt-8">
-        {/* Edtech */}
-        <div className="flex flex-col items-center justify-center border border-t-0 border-r-0 border-l-0 border-b-2 border-dashed border-gray-500 p-4 sm:p-8">
-          <span className="text-lg sm:text-2xl">Edtech</span>
-        </div>
-
-        {/* Center dashed line */}
-        <div className="hidden sm:block flex items-center">
-          <hr className="border-dashed border-r-2 border-gray-500 h-12" />
-        </div>
-
-        {/* Ecom */}
-        <div className="flex flex-col items-center justify-center border border-t-0 border-r-0 border-l-0 border-b-2 border-dashed border-gray-500 p-4 sm:p-8">
-          <span className="text-lg sm:text-2xl">Ecom</span>
+      <div className="md:block  mr-28">
+        <div className="flex justify-center items-center h-screen">
+          <div className="relative flex">
+            {/* First Cross */}
+            <div
+              className="relative "
+              style={{ width: "32rem", height: "16rem" }}
+            >
+              <div className="absolute bg-transparent w-full h-1/3 top-1/2 left-0 transform -translate-y-1/2 border-b  border-dashed border-white text-white flex justify-center items-center ml-4">
+                <div
+                  className=" absolute text-4xl mb-12"
+                  style={{ marginLeft: 1500, fontWeight: 600 }}
+                >
+                  {" "}
+                  Edtech
+                </div>
+              </div>
+              <div className="absolute bg-transparent h-full w-1/12 top-0 left-1/2 transform -translate-x-1/2 border-r border-dashed border-white my-12 ml-16"></div>
+            </div>
+            {/* Second Cross */}
+            <div
+              className="relative "
+              style={{ width: "40rem", height: "16rem" }}
+            >
+              <div className="absolute bg-transparent w-full h-1/3 top-1/2 left-0 transform -translate-y-1/2 border-b border-dashed border-white ml-4"></div>
+              <div></div>
+              <div className="absolute bg-transparent h-full w-1/3 top-0 left-1/3 transform -translate-x-1/2 border-r border-dashed border-white my-12">
+                <div
+                  className="absolute my-5 text-4xl right-44 "
+                  style={{ fontWeight: 600 }}
+                >
+                  Fintech
+                </div>
+              </div>
+            </div>
+            <div
+              className="absolute my-16 text-4xl  ml-8 "
+              style={{ fontWeight: 600 }}
+            >
+              Foodtech
+            </div>
+            <div
+              className="absolute ml-8  text-4xl"
+              style={{ marginTop: 220, fontWeight: 600 }}
+            >
+              Traveltech
+            </div>
+            <div
+              className="absolute   text-4xl"
+              style={{ marginTop: 220, fontWeight: 600, marginLeft: 485 }}
+            >
+              Healthcare
+            </div>
+            <div
+              className="absolute   text-4xl"
+              style={{ marginTop: 220, fontWeight: 600, marginLeft: 960 }}
+            >
+              Ecom
+            </div>
+          </div>
         </div>
       </div>
     </div>

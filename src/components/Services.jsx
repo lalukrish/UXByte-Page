@@ -61,7 +61,7 @@ const Services = () => {
             variants={fadeInScaleRotate}
             initial="initial"
             animate={inView ? "animate" : "initial"}
-            transition={{ delay: 0.6, duration: 0.4, ease: "easeInOut" }}
+            transition={{ delay: 0.6, duration: 0.4, ease: "easeOut" }}
           >
             <span className="text-fuchsia-500">Marketing</span>
             <ul className="my-6 text-3xl font-medium text-start sm:ml-0 xs:text-2xl sm:text-2xl">

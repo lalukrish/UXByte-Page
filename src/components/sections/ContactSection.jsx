@@ -224,7 +224,7 @@ const ContactSection = () => {
                   <div>
                     <label
                       htmlFor="phone"
-                      className="block mb-2 text-sm font-medium text-white dark:text-white"
+                      className="block mb-2 text-sm font-medium text-white dark:text-white "
                     >
                       Subject
                     </label>

@@ -154,16 +154,52 @@ const Navbar = ({
                   display: { xs: "block", md: "none" },
                 }}
               >
-                {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography
-                      textAlign="center"
-                      sx={{ textTransform: "none" }}
-                    >
-                      {page}
-                    </Typography>
-                  </MenuItem>
-                ))}
+                {/* {pages.map((page) => ( */}
+                <MenuItem
+                  onClick={handleCloseNavMenu}
+                  sx={{
+                    flexDirection: "column",
+                    display: "flex",
+                    width: "400px",
+                    backgroundColor: "transparent",
+                  }}
+                >
+                  {/* <Typography textAlign="center" sx={{ textTransform: "none" }}> */}
+                  {/* {page} */}
+
+                  {/* </Typography> */}
+                  <Button
+                    onClick={aboutUsLocation}
+                    sx={{ mx: 2, color: "black", textTransform: "none" }}
+                  >
+                    About
+                  </Button>
+                  <Button
+                    onClick={whyusLocation}
+                    sx={{ mx: 2, color: "black", textTransform: "none" }}
+                  >
+                    Why Us
+                  </Button>
+                  <Button
+                    onClick={workLocation}
+                    sx={{ mx: 2, color: "black", textTransform: "none" }}
+                  >
+                    Work
+                  </Button>
+                  <Button
+                    onClick={servicesLocation}
+                    sx={{ mx: 2, color: "black", textTransform: "none" }}
+                  >
+                    Services
+                  </Button>
+                  <Button
+                    onClick={workLetstalk}
+                    sx={{ mx: 2, color: "black", textTransform: "none" }}
+                  >
+                    Lets talk
+                  </Button>
+                </MenuItem>
+                {/* ))} */}
               </Menu>
             </Box>
           </Toolbar>
