@@ -104,8 +104,17 @@ const Navbar = ({
               </IconButton>
               <Button
                 color="inherit"
-                className="text-black bg-white px-6 h-10 my-2  ml-16 "
-                sx={{ borderRadius: "0.5rem", textTransform: "none" }}
+                className="text-black bg-white px-6 h-10 my-2 ml-16"
+                sx={{
+                  borderRadius: "0.5rem",
+                  textTransform: "none",
+                  "&:hover": {
+                    backgroundColor: "white !important", // Override hover background color
+                  },
+                  "&:active": {
+                    backgroundColor: "white !important", // Override active background color
+                  },
+                }}
               >
                 Let's Connect
               </Button>
