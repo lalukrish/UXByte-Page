@@ -14,6 +14,7 @@ import Navbar from "../navbar";
 const ContactSection = () => {
   return (
     <>
+      <Navbar />
       <div className="mt-[-120]">
         <div className="grid grid-cols-5 gap-10 mt-40 ml-10">
           {/* Left Grid for Text Content */}
@@ -276,6 +277,7 @@ const ContactSection = () => {
           <br></br>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
