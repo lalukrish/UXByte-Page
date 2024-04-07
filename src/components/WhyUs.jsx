@@ -3,7 +3,7 @@ import React from "react";
 
 const WhyUs = () => {
   return (
-    <div className="mt-12 text-center" id="lets_talk">
+    <div className="mt-12 text-center" id="why_us">
       <div className=" mb-6">
         <span className="text-5xl font-extrabold bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent">
           Why us !

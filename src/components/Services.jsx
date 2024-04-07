@@ -13,7 +13,7 @@ const Services = () => {
     triggerOnce: false, // Set to false to trigger the animation every time the component enters the viewport
   });
   return (
-    <div className="mt-20 text-center " id="lets_talk ">
+    <div className="mt-20 text-center " id="services_id">
       <div className="text-6xl font-extrabold mb-6">
         <span className="bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent">
           Services

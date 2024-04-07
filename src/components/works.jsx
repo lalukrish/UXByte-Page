@@ -2,7 +2,10 @@ import React from "react";
 
 const Works = () => {
   return (
-    <div className="flex flex-col items-center my-10 mx-4 sm:mx-10">
+    <div
+      className="flex flex-col items-center my-10 mx-4 sm:mx-10"
+      id="works_id"
+    >
       <div className="text-3xl sm:text-5xl font-extrabold">
         <span className="bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent">
           Works{" "}
