@@ -9,7 +9,7 @@ module.exports = {
   plugins: [],
   theme: {
     fontSize: {
-      "9xl": "20rem",
+      "9xl": "17rem",
       "8xl": "7rem",
       "7xl": "6rem",
       "4xl": "2.441rem",
@@ -17,7 +17,7 @@ module.exports = {
       "6xl": "3.75rem",
       "3xl": "2.14rem",
       "2xl": "1.41rem",
-      "1xl": "1.11rem",
+      "1xl": "1.16rem",
     },
   },
 };
