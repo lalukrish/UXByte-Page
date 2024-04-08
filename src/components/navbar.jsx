@@ -43,7 +43,7 @@ const Navbar = ({
   };
 
   return (
-    <div>
+    <div className="md:my-2">
       <AppBar
         position="static"
         elevation={0}

@@ -21,7 +21,7 @@ const Hero = () => {
           alt="UXByte Logo"
           className="h-6 w-6 mr-2"
         />
-        <p className="  text-center text-lg ">Welcome to UXByte</p>
+        <p className="  text-center text-lg md:text-2xl">Welcome to UXByte</p>
       </div>
       <h1
         className="text-7xl md:text-9xl font-bold text-transparent whitespace-nowrap md:mb-20"
@@ -32,7 +32,7 @@ const Hero = () => {
 
       <div className="md:absolute ">
         <div className="flex flex-col md:flex-row items-center justify-center text-center">
-          <div className="flex flex-col md:flex-row text-4xl items-center md:mt-10 lg:mt-40">
+          <div className="flex flex-col md:flex-row text-4xl items-center md:mt-10 lg:mt-40 font-bold ">
             <span>
               <span className="bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent">
                 Code{" "}
@@ -50,7 +50,7 @@ const Hero = () => {
       </div>
       <div className="md:absolute">
         <div
-          className="text-xs md:text-1xl  text-center mx-3 md:mx-0  md:px-72  md:mt-80 my-4"
+          className="text-xs md:text-1xl  text-center mx-3 md:mx-0  md:px-72  md:mt-80 my-4 text-xl"
           style={{ color: "#CBBAFB" }}
         >
           We bridge the gap between cutting-edge design and powerful
@@ -58,9 +58,9 @@ const Hero = () => {
           brand to thrive in the ever-evolving digital landscape.
         </div>
       </div>
-      <div className="mt-6  md:mt-0 md:mb-20">
+      <div className="mt-8  md:mt-6 md:mb-20">
         <button
-          className="bg-white text-black py-3 px-4 flex rounded-lg hover:bg-gray-200 my-4 md:my-0"
+          className="bg-white text-black py-4 px-6 flex rounded-lg hover:bg-gray-200 my-4 md:my-0 font-semibold"
           onClick={() => {
             console.log("object");
           }}

@@ -13,9 +13,15 @@ const Works = () => {
   return (
     <div className="hidden md:block">
       <div className="text-6xl font-extrabold  text-center" id="works_id">
-        <span className="bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent">
-          Works{" "}
-        </span>
+        <div
+          className="absolute md:my-20  inset-x-0"
+          style={{ textAlign: "center" }}
+        >
+          {" "}
+          <span className=" bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent">
+            Works{" "}
+          </span>
+        </div>
       </div>
       <div className="md:block  mr-28">
         <div className="flex justify-center items-center h-screen">
