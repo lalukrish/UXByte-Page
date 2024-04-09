@@ -116,7 +116,7 @@ const Navbar = ({
                   },
                 }}
               >
-                Let's Connect
+                Let&apos;s Connect
               </Button>
             </Box>
             <Box

@@ -8,7 +8,7 @@ import Services from "@/components/Services";
 import WhyUs from "@/components/WhyUs";
 import Works from "@/components/works";
 import { useEffect } from "react";
-import { Html } from "next/document";
+import document,{ Html } from "next/document";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 

@@ -1,5 +1,6 @@
 import { BsFillLightningChargeFill } from "react-icons/bs";
-
+import React from 'react';
+import { Image } from 'next/image';
 const Hero = () => {
   return (
     <div
@@ -65,7 +66,7 @@ const Hero = () => {
             console.log("object");
           }}
         >
-          Let's Connect
+          Let&apos;s Connect
           <span className="mx-2 my-1">
             <BsFillLightningChargeFill />
           </span>

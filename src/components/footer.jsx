@@ -112,7 +112,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link href="" className="hover:underline">
-                      Let's Talk
+                      Let&apos;s Talk
                     </Link>
                   </li>
                 </ul>

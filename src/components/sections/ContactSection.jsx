@@ -20,12 +20,12 @@ const ContactSection = () => {
           {/* Left Grid for Text Content */}
           <div className="col-span-2">
             <div className="flex flex-col justify-center">
-              <h2 className="text-5xl font-bold ml-20">Let's Create</h2>
+              <h2 className="text-5xl font-bold ml-20">Let&apos;s Create</h2>
               <h2 className="bg-gradient-to-r from-white  via-black-100 to-black-200 text-transparent bg-clip-text text-5xl font-bold ml-20">
                 Experiences !
               </h2>
               <br></br>
-              <h4 className="text-2xl font-normal ml-20">Let's talk !</h4>
+              <h4 className="text-2xl font-normal ml-20">Let&apos;s talk !</h4>
               <div>
                 <h5
                   className="text-xl font-medium mt-20 ml-20"
@@ -96,7 +96,7 @@ const ContactSection = () => {
             >
               <div>
                 <h2 className="text-white font-normal text-2xl ">
-                  I'm Interested In
+                  I&apos;m Interested In
                 </h2>
                 <br></br>
               </div>

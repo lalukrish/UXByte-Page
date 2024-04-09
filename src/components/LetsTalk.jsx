@@ -5,7 +5,7 @@ const LetsTalk = () => {
     <div className="mt-20 text-center" id="lets_talk">
       <div className="text-6xl font-extrabold mb-6">
         <span className="bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent">
-          Let's talk!
+          Let&apos;s talk!
         </span>
       </div>
       <div className="mx-auto max-w-lg">

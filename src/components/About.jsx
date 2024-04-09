@@ -1,4 +1,5 @@
 import React from "react";
+import { Image } from 'react';
 
 const About = () => {
   return (
@@ -25,7 +26,7 @@ const About = () => {
               <span className="text-purple-300 font-bold">
                 Passionate Technologists:
               </span>{" "}
-              We're a team that gets fired up about innovation and creating
+              We&apos;re a team that gets fired up about innovation and creating
               awesome tech.
             </li>
             <li className="mb-4 font-light">

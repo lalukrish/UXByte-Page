@@ -79,7 +79,7 @@ const WhyUs = () => {
                 End-to-End Partnership
               </h1>
               <p className="mx-20 text-left mr-6 ">
-                We're here for the long haul, supporting you from brainstorming
+                We &apos;re here for the long haul, supporting you from brainstorming
                 to launch and beyond.{" "}
               </p>
             </div>
