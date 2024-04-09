@@ -32,7 +32,7 @@ const Hero = () => {
 
       <div className="md:absolute ">
         <div className="flex flex-col md:flex-row items-center justify-center text-center">
-          <div className="flex flex-col md:flex-row text-4xl items-center md:mt-10 lg:mt-40 font-bold ">
+          <div className="flex flex-col md:flex-row text-4xl items-center md:mt-1 lg:mt-40 font-semibold ">
             <span>
               <span className="bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent">
                 Code{" "}
