@@ -1,6 +1,6 @@
 import { BsFillLightningChargeFill } from "react-icons/bs";
-import React from 'react';
-import { Image } from 'next/image';
+import React from "react";
+import Image from "next/image";
 const Hero = () => {
   return (
     <div
@@ -17,10 +17,12 @@ const Hero = () => {
         className="flex items-center justify-center   absolute "
         style={{ marginBottom: 560 }}
       >
-        <img
-          src="assets/Vector.png"
+        <Image
+          src="/assets/Vector.png"
           alt="UXByte Logo"
           className="h-6 w-6 mr-2"
+          width={6}
+          height={10}
         />
         <p className="  text-center text-lg md:text-2xl">Welcome to UXByte</p>
       </div>
@@ -33,7 +35,7 @@ const Hero = () => {
 
       <div className="md:absolute ">
         <div className="flex flex-col md:flex-row items-center justify-center text-center">
-          <div className="flex flex-col md:flex-row text-4xl items-center md:mt-1 lg:mt-40 font-semibold ">
+          <div className="flex flex-col md:flex-row text-3xl items-center md:mt-1 lg:mt-40 font-semibold ">
             <span>
               <span className="bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent">
                 Code{" "}
