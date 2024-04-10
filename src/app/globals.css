@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+    --custom-text-6xl-font-size: 4rem; /* Adjust the value as needed */
+  }
+}
+
+@font-face {
+  font-family: "Satoshi-Black";
+  src: url("/fonts/Satoshi-Black.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url("/fonts/Satoshi-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Satoshi-BlackItalic";
+  src: url("/fonts/Satoshi-BlackItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("/fonts/Satoshi-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("/fonts/Satoshi-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Satoshi-MediumItalic";
+  src: url("/fonts/Satoshi-MediumItalic.otf") format("opentype");
+}
+
+/* .primary_button {
+  color: black;
+  background-color: #ffffff;
+  font-weight: 500;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+} */
+
+body {
+  color: white;
+  font-family: "Satoshi";
+  /* font-size: 16px;  */
+  background-color: #0f0f0f;
+  width: 100%;
+}
