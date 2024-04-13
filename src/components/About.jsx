@@ -61,7 +61,7 @@ const About = () => {
         <div className="hidden sm:block">
           <div className="flex justify-center md:col-span-1 md:mb-20">
             <img
-              src="https://res.cloudinary.com/dvjjzsilz/image/upload/v1711784029/atwww59mdcbnvxvpxmei.png"
+              src="/assets/aboutus.png"
               className="h-80 w-80 md:w-80"
               alt=""
               width={100}

@@ -13,6 +13,7 @@ import MenuItem from "@mui/material/MenuItem";
 import { useState } from "react";
 import Image from "next/image";
 import { BsSun } from "react-icons/bs";
+import Blackwhitelogo, { NewLogo } from "../../public/icon/blckwhitelogo";
 
 const pages = ["About", "Why Us", "Work", "Services", "Lets talk"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -52,11 +53,16 @@ const Navbar = ({
         <Container maxWidth="xl ">
           <Toolbar disableGutters>
             <Image
-              src="https://res.cloudinary.com/dvjjzsilz/image/upload/v1711783336/e5c19dbcnmyg9h682icc.png"
+              src="/assets/white.svg"
               alt=" Logo"
-              width={140}
+              width={100}
               height={40}
             />
+            {/* <Image
+            src={NewLogo} alt="noimage"
+            /> */}
+
+            
             <Box
               sx={{
                 display: { xs: "none", md: "flex" },
@@ -160,8 +166,8 @@ const Navbar = ({
                   sx={{
                     flexDirection: "column",
                     display: "flex",
-                    width: "400px",
-                    backgroundColor: "transparent",
+                    width: "200px",
+                    background: "transparent",
                   }}
                 >
                   {/* <Typography textAlign="center" sx={{ textTransform: "none" }}> */}

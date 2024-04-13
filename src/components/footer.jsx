@@ -23,7 +23,7 @@ const Footer = () => {
                 className="flex items-center space-x-3 rtl:space-x-reverse"
               >
                 <Image
-                  src="https://res.cloudinary.com/dvjjzsilz/image/upload/v1711783336/e5c19dbcnmyg9h682icc.png"
+                  src="/assets/white.svg"
                   alt=" Logo"
                   width={140}
                   height={40}
@@ -55,7 +55,7 @@ const Footer = () => {
                   <span className="sr-only">GitHub page</span>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/uxbyte-studio/about/" target="blank"
                   className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
                 >
                   <FaLinkedinIn />
