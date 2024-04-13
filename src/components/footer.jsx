@@ -41,7 +41,7 @@ const Footer = () => {
                   <span className="sr-only">Facebook page</span>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/uxbyte/" target="blank"
                   className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
                 >
                   <FaInstagram />
@@ -91,27 +91,27 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className="mb-4">
-                    <Link href="" className="hover:underline">
+                    <Link href="http://localhost:3000/#aboutUs_id"  className="hover:underline">
                       About
                     </Link>
                   </li>
                   <li className="mb-4">
-                    <Link href="" className="hover:underline">
+                    <Link href="http://localhost:3000/#why_us" className="hover:underline">
                       Why us
                     </Link>
                   </li>
                   <li className="mb-4">
-                    <Link href="" className="hover:underline">
+                    <Link href="http://localhost:3000/#works_id" className="hover:underline">
                       Works
                     </Link>
                   </li>
                   <li className="mb-4">
-                    <Link href="" className="hover:underline">
+                    <Link href="http://localhost:3000/#services_id" className="hover:underline">
                       Services
                     </Link>
                   </li>
                   <li>
-                    <Link href="" className="hover:underline">
+                    <Link href="http://localhost:3000/#lets_talk" className="hover:underline">
                       Let&apos;s Talk
                     </Link>
                   </li>
