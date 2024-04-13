@@ -157,7 +157,7 @@ const Footer = () => {
                       href="mailto:info@uxbyte.com"
                       className="hover:underline"
                     >
-                      Email: info@uxbyte.com
+                      Email: info@uxbyte.in
                     </a>
                   </li>
                 </ul>
