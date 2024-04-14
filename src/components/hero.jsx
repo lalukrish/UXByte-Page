@@ -1,5 +1,6 @@
 import { BsFillLightningChargeFill } from "react-icons/bs";
-
+import React from 'react';
+import { Image } from 'next/image';
 const Hero = () => {
   return (
     <div
@@ -32,7 +33,7 @@ const Hero = () => {
 
       <div className="md:absolute ">
         <div className="flex flex-col md:flex-row items-center justify-center text-center">
-          <div className="flex flex-col md:flex-row text-4xl items-center md:mt-10 lg:mt-40 font-bold ">
+          <div className="flex flex-col md:flex-row text-4xl items-center md:mt-1 lg:mt-40 font-semibold ">
             <span>
               <span className="bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent">
                 Code{" "}
@@ -58,14 +59,14 @@ const Hero = () => {
           brand to thrive in the ever-evolving digital landscape.
         </div>
       </div>
-      <div className="mt-8  md:mt-6 md:mb-20">
+      <div className="mt-8  md:mt-16 md:mb-20">
         <button
           className="bg-white text-black py-4 px-6 flex rounded-lg hover:bg-gray-200 my-4 md:my-0 font-semibold"
           onClick={() => {
             console.log("object");
           }}
         >
-          Let's Connect
+          Let&apos;s Connect
           <span className="mx-2 my-1">
             <BsFillLightningChargeFill />
           </span>

@@ -23,7 +23,7 @@ const Footer = () => {
                 className="flex items-center space-x-3 rtl:space-x-reverse"
               >
                 <Image
-                  src="https://res.cloudinary.com/dvjjzsilz/image/upload/v1711783336/e5c19dbcnmyg9h682icc.png"
+                  src="/assets/white.svg"
                   alt=" Logo"
                   width={140}
                   height={40}
@@ -41,7 +41,7 @@ const Footer = () => {
                   <span className="sr-only">Facebook page</span>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/uxbyte/" target="blank"
                   className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
                 >
                   <FaInstagram />
@@ -55,7 +55,7 @@ const Footer = () => {
                   <span className="sr-only">GitHub page</span>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/uxbyte-studio/about/" target="blank"
                   className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
                 >
                   <FaLinkedinIn />
@@ -91,28 +91,28 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className="mb-4">
-                    <Link href="" className="hover:underline">
+                    <Link href="http://localhost:3000/#aboutUs_id"  className="hover:underline">
                       About
                     </Link>
                   </li>
                   <li className="mb-4">
-                    <Link href="" className="hover:underline">
+                    <Link href="http://localhost:3000/#why_us" className="hover:underline">
                       Why us
                     </Link>
                   </li>
                   <li className="mb-4">
-                    <Link href="" className="hover:underline">
+                    <Link href="http://localhost:3000/#works_id" className="hover:underline">
                       Works
                     </Link>
                   </li>
                   <li className="mb-4">
-                    <Link href="" className="hover:underline">
+                    <Link href="http://localhost:3000/#services_id" className="hover:underline">
                       Services
                     </Link>
                   </li>
                   <li>
-                    <Link href="" className="hover:underline">
-                      Let's Talk
+                    <Link href="http://localhost:3000/#lets_talk" className="hover:underline">
+                      Let&apos;s Talk
                     </Link>
                   </li>
                 </ul>
@@ -157,7 +157,7 @@ const Footer = () => {
                       href="mailto:info@uxbyte.com"
                       className="hover:underline"
                     >
-                      Email: info@uxbyte.com
+                      Email: info@uxbyte.in
                     </a>
                   </li>
                 </ul>
