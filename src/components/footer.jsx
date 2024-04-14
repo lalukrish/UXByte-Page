@@ -7,7 +7,15 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaDribbble } from "react-icons/fa";
 
-const Footer = () => {
+const Footer = (
+  {
+    whyusLocation,
+    servicesLocation,
+    aboutUsLocation,
+    workLocation,
+    workLetstalk,
+  }
+) => {
   return (
     <>
       <div className="mt-28">
@@ -90,30 +98,30 @@ const Footer = () => {
                       Home
                     </Link>
                   </li>
-                  <li className="mb-4">
-                    <Link href="http://localhost:3000/#aboutUs_id"  className="hover:underline">
+                  <li className="mb-4 cursor-pointer hover:underline"  onClick={ aboutUsLocation}>
+                    
                       About
-                    </Link>
+                    
                   </li>
-                  <li className="mb-4">
-                    <Link href="http://localhost:3000/#why_us" className="hover:underline">
+                  <li className="mb-4 cursor-pointer hover:underline"  onClick={ whyusLocation}>
+                    
                       Why us
-                    </Link>
+                    
                   </li>
-                  <li className="mb-4">
-                    <Link href="http://localhost:3000/#works_id" className="hover:underline">
+                  <li className="mb-4 cursor-pointer hover:underline"  onClick={ workLocation}>
+                    
                       Works
-                    </Link>
+                    
                   </li>
-                  <li className="mb-4">
-                    <Link href="http://localhost:3000/#services_id" className="hover:underline">
+                  <li className="mb-4 cursor-pointer hover:underline"  onClick={ servicesLocation}>
+                    
                       Services
-                    </Link>
+                    
                   </li>
-                  <li>
-                    <Link href="http://localhost:3000/#lets_talk" className="hover:underline">
+                  <li className="mb-4 cursor-pointer hover:underline"  onClick={ workLetstalk}>
+                    
                       Let&apos;s Talk
-                    </Link>
+                    
                   </li>
                 </ul>
               </div>

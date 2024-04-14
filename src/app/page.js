@@ -73,7 +73,12 @@ export default function Home() {
       <Works />
       <Services />
       <LetsTalk />
-      <Footer />
+      <Footer 
+      whyusLocation={whyusLocation}
+      servicesLocation={servicesLocation}
+      aboutUsLocation={aboutUsLocation}
+      workLocation={workLocation}
+      workLetstalk={workLetstalk}/>
     </div>
   );
 }
