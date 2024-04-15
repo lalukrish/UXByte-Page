@@ -162,7 +162,7 @@ const Footer = (
                   </li>
                   <li>
                     <a
-                      href="mailto:info@uxbyte.com"
+                      href="mailto:info@uxbyte.in"
                       className="hover:underline"
                     >
                       Email: info@uxbyte.in
