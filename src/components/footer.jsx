@@ -56,11 +56,11 @@ const Footer = (
                   <span className="sr-only">Instagram community</span>
                 </a>
                 <a
-                  href="#"
+                  href="https://twitter.com/uxbytestudio" target="blank"
                   className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
                 >
                   <FaXTwitter />
-                  <span className="sr-only">GitHub page</span>
+                  <span className="sr-only">Twitter</span>
                 </a>
                 <a
                   href="https://www.linkedin.com/company/uxbyte-studio/about/" target="blank"
