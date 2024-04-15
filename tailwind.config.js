@@ -11,13 +11,13 @@ module.exports = {
     fontSize: {
       "9xl": "17rem",
       "8xl": "7rem",
-      "7xl": "6rem",
+      "7xl": "5.8rem",
       "4xl": "2.441rem",
       "5xl": "3rem",
       "6xl": "3.75rem",
       "3xl": "2.14rem",
       "2xl": "1.41rem",
-      "1xl": "1.16rem",
+      "1xl": "1.11rem",
     },
   },
 };
