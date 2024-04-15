@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaFacebookF } from "react-icons/fa";
+import { FaFacebookF, FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -59,7 +59,7 @@ const Footer = (
                   href="#"
                   className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
                 >
-                  <FaGithub />
+                  <FaXTwitter />
                   <span className="sr-only">GitHub page</span>
                 </a>
                 <a
