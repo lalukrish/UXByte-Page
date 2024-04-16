@@ -8,12 +8,12 @@ const WhyUs = () => {
         <span className="text-5xl font-extrabold bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent">
           Why us !
         </span>
-        <div className="grid grid-cols-1 md:grid-cols-4 justify-center mt-12 gap-6">
-          <div className="flex flex-col items-center justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-4 justify-center mt-12 gap-6 ">
+          <div className="flex flex-col items-center justify-center dark:hover:bg-red-400">
             <Image
               src="/assets/pie-and-charts.svg"
               alt=""
-              className="filter brightness-100 hover:brightness-75"
+              className="filter brightness-100 "
               width={180}
               height={200}
             />

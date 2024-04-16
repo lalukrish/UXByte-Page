@@ -61,7 +61,7 @@ const Hero = () => {
       </div>
       <div className="mt-8  md:mt-16 md:mb-20">
         <button
-          className="bg-white text-black py-4 px-6 flex rounded-lg hover:bg-gray-200 my-4 md:my-0 font-semibold"
+          className="bg-white text-black py-3.5 px-6 flex rounded-lg hover:bg-gray-200 my-4 md:my-0 font-medium "
           onClick={() => {
             console.log("object");
           }}

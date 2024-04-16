@@ -151,6 +151,7 @@ const Footer = (
                   </li>
                 </ul>
               </div>
+              </div>
               <div>
                 <h2 className="mb-6  text-#FFFFFF" style={{fontWeight:500  ,fontSize:24}}>
                   Contact Us
@@ -171,7 +172,7 @@ const Footer = (
                   </li>
                 </ul>
               </div>
-            </div>
+            
           </div>
         </div>
       </footer>
