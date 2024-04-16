@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { FaPinterestP } from "react-icons/fa6";
 import { FaFacebookF, FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -42,11 +43,11 @@ const Footer = (
               </a>
               <div className="flex mt-8 sm:justify-center">
                 <a
-                  href="#"
+                  href="https://in.pinterest.com/uxbytestudio/" target="blank"
                   className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                 >
-                  <FaFacebookF />
-                  <span className="sr-only">Facebook page</span>
+                  <FaPinterestP />
+                  <span className="sr-only">Pinterest page</span>
                 </a>
                 <a
                   href="https://www.instagram.com/uxbyte/" target="blank"

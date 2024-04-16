@@ -23,7 +23,7 @@ const Works = () => {
           </span>
         </div>
       </div>
-      <div className="md:block  mr-28">
+      <div className="md:block  md:ml-20 mr-28" >
         <div className="flex justify-center items-center h-screen">
           <div className="relative flex">
             {/* First Cross */}
