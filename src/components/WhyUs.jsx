@@ -21,7 +21,7 @@ const WhyUs = () => {
               <h1 className="text-2xl font-semibold my-4 ">
                 Future Proof Execution
               </h1>
-              <p className="mx-20 text-left mr-6 ">
+              <p className="mx-20 text-left mr-6 md:ml-12 ">
                 We build with the latest advancements in mind, ensuring your
                 product scales, stays secure, and thrives for years to come.
               </p>
@@ -40,7 +40,7 @@ const WhyUs = () => {
               <h1 className="text-2xl font-semibold my-4">
                 Streamlined Efficiency
               </h1>
-              <p className="mx-20 text-left mr-6 ">
+              <p className="mx-20 text-left mr-6 md:ml-12">
                 Our refined processes guarantee transparency and keep your
                 project on track and within budget.{" "}
               </p>
@@ -59,7 +59,7 @@ const WhyUs = () => {
               <h1 className="text-2xl font-semibold my-4">
                 Design that Captivates
               </h1>
-              <p className="mx-20 text-left mr-6 ">
+              <p className="mx-20 text-left mr-6 md:ml-12">
                 We create beautiful and user-friendly interfaces that not only
                 look amazing but also deliver an intuitive experience.{" "}
               </p>
@@ -78,7 +78,7 @@ const WhyUs = () => {
               <h1 className="text-2xl font-semibold my-4">
                 End-to-End Partnership
               </h1>
-              <p className="mx-20 text-left mr-6 ">
+              <p className="mx-20 text-left mr-6 md:ml-12">
                 We &apos;re here for the long haul, supporting you from brainstorming
                 to launch and beyond.{" "}
               </p>

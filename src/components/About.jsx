@@ -13,8 +13,8 @@ const About = () => {
             src="https://res.cloudinary.com/dvjjzsilz/image/upload/v1711784029/atwww59mdcbnvxvpxmei.png"
             className="h-38 w-36 md:w-48 md:hidden"
             alt=""
-            width={32}
-            height={20}
+            width={394}
+            height={326}
           />
         </div>
       </div>

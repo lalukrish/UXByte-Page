@@ -11,7 +11,7 @@ const Works = () => {
   // };
 
   return (
-    <div className="hidden md:block">
+    <div className="hidden md:block md:mb-0">
       <div className="text-6xl font-extrabold  text-center" id="works_id">
         <div
           className="absolute md:my-20  inset-x-0"
