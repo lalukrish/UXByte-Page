@@ -18,17 +18,17 @@ const WhyUs = () => {
               height={200}
             />
             <div className="text-center">
-              <h1 className="text-2xl font-semibold my-4 ">
+              <h1 className="text-2xl font-semibold my-4" style={{fontSize:24,fontWeight:700}}>
                 Future Proof Execution
               </h1>
-              <p className="mx-20 text-left mr-6 ">
+              <p className="mx-20  text-left mr-6 md:ml-10 " style={{fontSize:16,fontWeight:400}}>
                 We build with the latest advancements in mind, ensuring your
                 product scales, stays secure, and thrives for years to come.
               </p>
             </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center my-8">
+          <div className="flex flex-col items-center justify-center my-8 md:mt-2">
             <Image
               src="/assets/smart-people.svg"
               alt=""
@@ -37,17 +37,17 @@ const WhyUs = () => {
               height={200}
             />
             <div className="text-center">
-              <h1 className="text-2xl font-semibold my-4">
+              <h1 className="text-2xl font-semibold my-4" style={{fontSize:24,fontWeight:700}}>
                 Streamlined Efficiency
               </h1>
-              <p className="mx-20 text-left mr-6 ">
+              <p className="mx-20 text-left mr-6 md:ml-10" style={{fontSize:16,fontWeight:400}}>
                 Our refined processes guarantee transparency and keep your
                 project on track and within budget.{" "}
               </p>
             </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center my-8">
+          <div className="flex flex-col items-center justify-center my-8 md:mt-8">
             <Image
               src="/assets/designer-working.svg"
               alt=""
@@ -56,17 +56,17 @@ const WhyUs = () => {
               height={200}
             />
             <div className="text-center">
-              <h1 className="text-2xl font-semibold my-4">
+              <h1 className="text-2xl font-semibold my-4" style={{fontSize:24,fontWeight:700}}>
                 Design that Captivates
               </h1>
-              <p className="mx-20 text-left mr-6 ">
+              <p className="mx-20 text-left mr-6 md:ml-9" style={{fontSize:16,fontWeight:400}}>
                 We create beautiful and user-friendly interfaces that not only
                 look amazing but also deliver an intuitive experience.{" "}
               </p>
             </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center my-8 md:mt-2">
             <Image
               src="/assets/business-deal.svg"
               alt=""
@@ -75,10 +75,10 @@ const WhyUs = () => {
               height={200}
             />
             <div className="text-center">
-              <h1 className="text-2xl font-semibold my-4">
+              <h1 className="text-2xl font-semibold my-4" style={{fontSize:24,fontWeight:700}}>
                 End-to-End Partnership
               </h1>
-              <p className="mx-20 text-left mr-6 ">
+              <p className="mx-20 text-left mr-6 md:ml-8" style={{fontSize:16,fontWeight:400}}>
                 We &apos;re here for the long haul, supporting you from brainstorming
                 to launch and beyond.{" "}
               </p>
