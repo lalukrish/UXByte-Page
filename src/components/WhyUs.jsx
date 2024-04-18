@@ -9,11 +9,11 @@ const WhyUs = () => {
           Why us !
         </span>
         <div className="grid grid-cols-1 md:grid-cols-4 justify-center mt-12 gap-6 ">
-          <div className="flex flex-col items-center justify-center dark:hover:bg-red-400">
+          <div className="flex flex-col items-center justify-center ">
             <Image
               src="/assets/pie-and-charts.svg"
               alt=""
-              className="filter brightness-100 "
+              className="filter brightness-100 hover:brightness-75"
               width={180}
               height={200}
             />
