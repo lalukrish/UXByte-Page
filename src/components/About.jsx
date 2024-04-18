@@ -22,7 +22,7 @@ const About = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 md:justify-center md:items-center">
         <div className="col-span-1 md:col-span-2 mb-20">
-          <ul className="list-disc ml-8 text-2xl">
+          <ul className="list-disc ml-8 text-xl">
             <li className="mb-4 font-light">
               <span className="text-purple-300 font-bold">
                 Passionate Technologists:
