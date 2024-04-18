@@ -8,17 +8,19 @@ const LetsTalk = () => {
           Let&apos;s talk!
         </span>
       </div>
-      <div className="mx-auto max-w-lg">
-        <p className="text-2xl font-medium mb-8">
+      <div className="mx-auto max-w-xl ">
+        <p className=" text-2xl font-light mb-8 " style={{fontSize:28}}>
           Get a personalized plan. Schedule a free consultation to discuss your
           specific needs.
         </p>
+        <div className="flex items-center justify-center">
         <button
           type="button"
-          className="text-black bg-white hover:bg-gray-200 font-medium rounded-lg text-2xl px-5 py-2.5"
+          className="bg-white text-black py-3.5 px-6 flex rounded-lg hover:bg-gray-200 my-4 md:my-0 font-medium items-center  "
         >
           Design a Quote
         </button>
+        </div>
       </div>
     </div>
   );

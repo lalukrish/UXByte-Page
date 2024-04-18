@@ -13,15 +13,16 @@ const About = () => {
             src="https://res.cloudinary.com/dvjjzsilz/image/upload/v1711784029/atwww59mdcbnvxvpxmei.png"
             className="h-38 w-36 md:w-48 md:hidden"
             alt=""
-            width={394}
-            height={326}
+            // width={374}
+            // height={267}
+            style={{ width: '100%', height: '100%' }}
           />
         </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 md:justify-center md:items-center">
         <div className="col-span-1 md:col-span-2 mb-20">
-          <ul className="list-disc ml-8 text-xl">
+          <ul className="list-disc ml-8 text-2xl">
             <li className="mb-4 font-light">
               <span className="text-purple-300 font-bold">
                 Passionate Technologists:
