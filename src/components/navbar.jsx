@@ -53,7 +53,7 @@ const Navbar = ({
     theme === "light" ? "/assets/black.svg" : "/assets/white.svg";
 
   const handleConnect = () => {
-    router.push("/contact-us");
+    router.push("/lets-talk");
   };
 
   return (

@@ -10,10 +10,10 @@ const CalendyMeet = () => {
       <InlineWidget
         url="https://calendly.com/uxbytestudio/let-s-chat"
         pageSettings={{
-          backgroundColor: "#3F3F3F",
+          backgroundColor: "#222222",
           hideEventTypeDetails: false,
           hideLandingPageDetails: false,
-          primaryColor: "#CBBAFB",
+          primaryColor: "#B979ED",
           textColor: "#FFFFFF",
         }}
       />

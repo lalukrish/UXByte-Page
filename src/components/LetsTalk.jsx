@@ -8,7 +8,7 @@ const LetsTalk = ({ theme, toggleTheme }) => {
   const buttonColor = theme === "light" ? "bg-[#0f0f0f] text-white" : "bg-white text-[#0f0f0f]";
   const backgroundColor = theme === "light" ? "bg-white" : "bg-[#0f0f0f]"; // Adjust background color based on theme
   const handleConnect = () => {
-    router.push("/contact-us");
+    router.push("/lets-talk");
     
   };
   return (
