@@ -41,7 +41,7 @@ const Hero = ({ theme, toggleTheme }) => {
           WebkitTextStroke:
             theme === "dark"
               ? "1px rgba(255, 255, 255, 0.2)"
-              : "1px rgba(128, 128, 128, 0.5)",
+              : "1px rgba(96, 0, 173, 1)",
           color: "transparent",
           letterSpacing: "0.08em",
         }}
@@ -69,7 +69,7 @@ const Hero = ({ theme, toggleTheme }) => {
       </div>
       <div className="md:absolute">
         <div
-          className="text-xs md:text-1xl  text-center mx-3 md:mx-0  md:px-72  md:mt-80 my-4 text-xl font-light"
+          className="md:text-1xl  text-center mx-3 md:mx-0  md:px-72  md:mt-80 my-4 text-xl "
           style={{ color: descriptionColor }}
         >
           We bridge the gap between cutting-edge design and powerful
