@@ -17,11 +17,11 @@ const WhyUs = () => {
               width={180}
               height={200}
             />
-            <div className="text-center">
-              <h1 className="text-2xl font-semibold my-4" style={{fontSize:24,fontWeight:700}}>
+            <div className="">
+              <h1 className="text-2xl font-semibold py-5" style={{fontSize:24,fontWeight:700}}>
                 Future Proof Execution
               </h1>
-              <p className="mx-20  text-left mr-6 md:ml-10 " style={{fontSize:16,fontWeight:400}}>
+              <p className="ml-12 mr-4 md:ml-9  text-left   " style={{fontSize:16,fontWeight:400}}>
                 We build with the latest advancements in mind, ensuring your
                 product scales, stays secure, and thrives for years to come.
               </p>
