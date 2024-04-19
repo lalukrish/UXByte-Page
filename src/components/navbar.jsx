@@ -75,31 +75,51 @@ const Navbar = ({
               >
                 <Button
                   onClick={aboutUsLocation}
-                  sx={{ mx: 2, color: "white", textTransform: "none" }}
+                  sx={{
+                    mx: 2,
+                    color: theme === "light" ? "black" : "white",
+                    textTransform: "none",
+                  }}
                 >
                   About
                 </Button>
                 <Button
                   onClick={whyusLocation}
-                  sx={{ mx: 2, color: "white", textTransform: "none" }}
+                  sx={{
+                    mx: 2,
+                    color: theme === "light" ? "black" : "white",
+                    textTransform: "none",
+                  }}
                 >
                   Why Us
                 </Button>
                 <Button
                   onClick={workLocation}
-                  sx={{ mx: 2, color: "white", textTransform: "none" }}
+                  sx={{
+                    mx: 2,
+                    color: theme === "light" ? "black" : "white",
+                    textTransform: "none",
+                  }}
                 >
                   Work
                 </Button>
                 <Button
                   onClick={servicesLocation}
-                  sx={{ mx: 2, color: "white", textTransform: "none" }}
+                  sx={{
+                    mx: 2,
+                    color: theme === "light" ? "black" : "white",
+                    textTransform: "none",
+                  }}
                 >
                   Services
                 </Button>
                 <Button
                   onClick={workLetstalk}
-                  sx={{ mx: 2, color: "white", textTransform: "none" }}
+                  sx={{
+                    mx: 2,
+                    color: theme === "light" ? "black" : "white",
+                    textTransform: "none",
+                  }}
                 >
                   Lets talk
                 </Button>
