@@ -1,15 +1,11 @@
 import { BsFillLightningChargeFill } from "react-icons/bs";
 import React from "react";
 import Image from "next/image";
-<<<<<<< HEAD
-const Hero = () => {
-=======
 const Hero = ({ theme, toggleTheme }) => {
   const textColor = theme === "light" ? "text-black" : "text-white";
   const buttonColor = theme === "light" ? "bg-white" : "bg-gray-800";
   const backgroundColor = theme === "light" ? "bg-white" : "bg-[#0f0f0f]"; // Adjust background color based on theme
 
->>>>>>> d987262e665e9426770cd0971640edf9fe95e43a
   return (
     <div
       className={`flex flex-col items-center justify-center min-h-screen  ${textColor} ${backgroundColor}`}

@@ -12,14 +12,18 @@ const Footer = ({ theme, toggleTheme }) => {
   const textColor = theme === "light" ? "text-black" : "text-white";
   const buttonColor = theme === "light" ? "bg-white" : "bg-gray-800";
   const backgroundColor = theme === "light" ? "bg-white" : "bg-[#0f0f0f]"; // Adjust background color based on theme
+  const LogoChange =
+    theme === "light" ? "/assets/black.svg" : "/assets/white.svg";
+  const borderColor = theme === "light" ? "border-black" : "border-white";
 
   console.log("text", textColor, backgroundColor);
+
   return (
     <>
       <div className={`py-28 ${textColor} ${backgroundColor}`}>
         {" "}
         <footer className={` dark:bg-black ${textColor} ${backgroundColor}`}>
-          <hr className="border-t border-white " />
+          <hr className={`border-t ${borderColor}`   } />
 
           <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
             <div className="md:flex md:justify-between">
@@ -29,7 +33,7 @@ const Footer = ({ theme, toggleTheme }) => {
                   className="flex items-center space-x-3 rtl:space-x-reverse"
                 >
                   <Image
-                    src="https://res.cloudinary.com/dvjjzsilz/image/upload/v1711783336/e5c19dbcnmyg9h682icc.png"
+                  src={LogoChange}
                     alt=" Logo"
                     width={140}
                     height={40}

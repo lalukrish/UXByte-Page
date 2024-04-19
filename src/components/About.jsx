@@ -15,7 +15,7 @@ const About = ({ theme, toggleTheme }) => {
           About
         </span>
         <div className="md:block ml-4 gap-2">
-          <Image
+          <img
             src="https://res.cloudinary.com/dvjjzsilz/image/upload/v1711784029/atwww59mdcbnvxvpxmei.png"
             className="h-38 w-36 md:w-48 md:hidden"
             alt=""
@@ -67,8 +67,8 @@ const About = ({ theme, toggleTheme }) => {
         {/* Adjusted for medium screens */}
         <div className="hidden sm:block">
           <div className="flex justify-center md:col-span-1 md:mb-20">
-            <Image
-              src="https://res.cloudinary.com/dvjjzsilz/image/upload/v1711784029/atwww59mdcbnvxvpxmei.png"
+            <img
+              src="/assets/aboutus.png"
               className="h-80 w-80 md:w-80"
               alt=""
               width={100}
