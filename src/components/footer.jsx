@@ -8,6 +8,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaDribbble } from "react-icons/fa";
 
+
 const Footer = ({ theme, toggleTheme }) => {
   const textColor = theme === "light" ? "text-black" : "text-white";
   const buttonColor = theme === "light" ? "bg-white" : "bg-gray-800";
@@ -15,6 +16,7 @@ const Footer = ({ theme, toggleTheme }) => {
   const LogoChange =
     theme === "light" ? "/assets/black.svg" : "/assets/white.svg";
   const borderColor = theme === "light" ? "border-black" : "border-white";
+  const hoverColor = theme === "light" ? "hover:text-black" : "hover:text-white";
 
   console.log("text", textColor, backgroundColor);
 
@@ -42,31 +44,31 @@ const Footer = ({ theme, toggleTheme }) => {
                 UXByte
               </span> */}
                 </a>
-                <div className="flex mt-8 sm:justify-center">
+                <div className="flex mt-8 sm:justify-center gap-5  ">
                   <a
-                    href="#"
-                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                    href="https://dribbble.com/UXByte_Studio" target="blank"
+                  className={`text-gray-500 ${hoverColor} text-2xl`}
                   >
-                    <FaFacebookF />
-                    <span className="sr-only">Facebook page</span>
+                    <FaDribbble />
+                    <span className="sr-only">Dribble</span>
                   </a>
                   <a
-                    href="#"
-                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+                    href="https://www.instagram.com/uxbyte?igsh=MWRiMjZ5ZWJobjdxYw==" target="blank"
+                    className={`text-gray-500 ${hoverColor} text-2xl`}
                   >
                     <FaInstagram />
                     <span className="sr-only">Instagram community</span>
                   </a>
                   <a
-                    href="#"
-                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+                    href="https://twitter.com/uxbytestudio" target="blank"
+                    className={`text-gray-500 ${hoverColor} text-2xl`}
                   >
-                    <FaGithub />
-                    <span className="sr-only">GitHub page</span>
+                    <FaXTwitter />
+                    <span className="sr-only">Twitter</span>
                   </a>
                   <a
-                    href="#"
-                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+                    href="https://www.linkedin.com/company/uxbyte-studio/" target="blank"
+                    className={`text-gray-500 ${hoverColor} text-2xl`}
                   >
                     <FaLinkedinIn />
                     <span className="sr-only">LinkedIn account</span>
