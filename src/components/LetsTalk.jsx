@@ -1,11 +1,16 @@
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const LetsTalk = ({ theme, toggleTheme }) => {
+  const router = useRouter();
   // Use the theme prop to conditionally apply styles
   const textColor = theme === "light" ? "text-[#0f0f0f]" : "text-white";
   const buttonColor = theme === "light" ? "bg-[#0f0f0f] text-white" : "bg-white text-[#0f0f0f]";
   const backgroundColor = theme === "light" ? "bg-white" : "bg-[#0f0f0f]"; // Adjust background color based on theme
-
+  const handleConnect = () => {
+    router.push("/contact-us");
+    
+  };
   return (
     <div
       className={`py-20 text-center ${textColor} ${backgroundColor}`}
@@ -25,7 +30,7 @@ const LetsTalk = ({ theme, toggleTheme }) => {
           <button
             type="button"
             className={`${buttonColor} hover:bg-gray-800 dark:hover:bg-gray-200 font-medium rounded-lg text-2xl px-5 py-2.5`}
-            onClick={toggleTheme}
+            onClick={handleConnect}
           >
             Design a Quote
           </button>
