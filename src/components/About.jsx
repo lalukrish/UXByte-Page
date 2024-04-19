@@ -29,33 +29,33 @@ const About = ({ theme, toggleTheme }) => {
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 md:justify-center md:items-center">
         <div className="col-span-1 md:col-span-2 mb-20">
           <ul className="text-xl list-disc ml-8 lg:text-2xl">
-            <li className="mb-4 font-light">
+            <li className="mb-4 font-normal">
               <span className="text-purple-300 font-semibold">
                 Passionate Technologists:
               </span>{" "}
               We&apos;re a team that gets fired up about innovation and creating
               awesome tech.
             </li>
-            <li className="mb-4 font-light">
+            <li className="mb-4 font-normal">
               <span className="text-purple-300 font-semibold">
                 End-to-End Expertise:
               </span>{" "}
               We handle everything from design and development to launch,
               ensuring a seamless product journey.
             </li>
-            <li className="mb-4 font-light">
+            <li className="mb-4 font-normal">
               <span className="text-purple-300 font-semibold">
                 Affordable Solutions:
               </span>{" "}
               Our flat monthly subscription makes cutting-edge product creation
               accessible to businesses of all sizes.
             </li>
-            <li className="mb-4 font-light">
+            <li className="mb-4 font-normal">
               <span className="text-purple-300 font-semibold">Growth Focused:</span>{" "}
               We believe in the power of technology to drive success and are
               dedicated to helping businesses achieve their goals.
             </li>
-            <li className="font-light">
+            <li className="font-normal">
               <span className="text-purple-300 font-semibold">
                 Agile & Collaborative:
               </span>{" "}

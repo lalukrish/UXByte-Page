@@ -69,7 +69,7 @@ const Hero = ({ theme, toggleTheme }) => {
       </div>
       <div className="md:absolute">
         <div
-          className="md:text-1xl  text-center mx-3 md:mx-0  md:px-72  md:mt-80 my-4 text-xl "
+          className="md:text-xl  text-1.5xl text-center mx-3 md:mx-0  md:px-72  md:mt-80 my-4  "
           style={{ color: descriptionColor }}
         >
           We bridge the gap between cutting-edge design and powerful

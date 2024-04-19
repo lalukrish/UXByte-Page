@@ -20,6 +20,7 @@ module.exports = {
       "6xl": "3.75rem",
       "3xl": "2.14rem",
       "2xl": "1.41rem",
+      "1.5xl": "1.24rem",
       "1xl": "1.16rem",
     },
     // colors: {
