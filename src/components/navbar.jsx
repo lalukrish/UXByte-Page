@@ -60,7 +60,7 @@ const Navbar = ({
           <Container maxWidth="xl ">
             <Toolbar disableGutters>
               <Image
-                src="https://res.cloudinary.com/dvjjzsilz/image/upload/v1711783336/e5c19dbcnmyg9h682icc.png"
+                src="/assets/white.svg"
                 alt=" Logo"
                 width={140}
                 height={40}
