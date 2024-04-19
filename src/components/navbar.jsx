@@ -47,6 +47,9 @@ const Navbar = ({
   const textColor = theme === "light" ? "text-black" : "text-white";
   const buttonColor = theme === "light" ? "bg-white" : "bg-gray-800";
   const backgroundColor = theme === "light" ? "bg-white" : "bg-[#0f0f0f]"; // Adjust background color based on theme
+  const LogoChange =
+    theme === "light" ? "/assets/black.svg" : "/assets/white.svg";
+
   return (
     <div className={`${textColor} ${backgroundColor}`}>
       <div className="">
@@ -59,12 +62,7 @@ const Navbar = ({
         >
           <Container maxWidth="xl ">
             <Toolbar disableGutters>
-              <Image
-                src="/assets/white.svg"
-                alt=" Logo"
-                width={140}
-                height={40}
-              />
+              <Image src={LogoChange} alt=" Logo" width={100} height={40} />
               <Box
                 sx={{
                   display: { xs: "none", md: "flex" },
@@ -135,9 +133,18 @@ const Navbar = ({
                   aria-label="theme change"
                   color="inherit"
                   onClick={toggleTheme}
+                  sx={{
+                    py: 2,
+                    px: 1,
+
+                    "&:hover": {
+                      boxShadow: "0px 0px 5px 0px rgba(0, 0, 0, 0.2)",
+                      justifyContent: "center",
+                    },
+                  }}
                 >
                   {theme === "light" ? (
-                    <BsSun className="ml-4" />
+                    <BsSun className="ml-4   text-black " />
                   ) : (
                     <BsMoon className="ml-4" />
                   )}
@@ -159,6 +166,7 @@ const Navbar = ({
                   Let's Connect
                 </Button>
               </Box>
+
               <Box
                 sx={{
                   display: { xs: "flex", md: "none" },
@@ -166,6 +174,26 @@ const Navbar = ({
                   justifyContent: "flex-end",
                 }}
               >
+                <IconButton
+                  aria-label="theme change"
+                  color="inherit"
+                  onClick={toggleTheme}
+                  sx={{
+                    py: 2,
+                    px: 1,
+
+                    "&:hover": {
+                      boxShadow: "0px 0px 5px 0px rgba(0, 0, 0, 0.2)",
+                      justifyContent: "center",
+                    },
+                  }}
+                >
+                  {theme === "light" ? (
+                    <BsSun className="ml-4   text-black " />
+                  ) : (
+                    <BsMoon className="ml-4" />
+                  )}
+                </IconButton>
                 <IconButton
                   size="large"
                   aria-label="account of current user"
