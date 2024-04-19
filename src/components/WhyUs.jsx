@@ -1,11 +1,17 @@
 import Image from "next/image";
 import React from "react";
 
-const WhyUs = () => {
+const WhyUs = ({ theme, toggleTheme }) => {
+  const textColor = theme === "light" ? "text-black" : "text-white";
+  const buttonColor = theme === "light" ? "bg-white" : "bg-gray-800";
+  const backgroundColor = theme === "light" ? "bg-white" : "bg-[#0f0f0f]"; // Adjust background color based on theme
+
   return (
-    <div className="mt-12 text-center" id="why_us">
+    <div
+      className={` py-12 text-center" id="why_us"  ${textColor} ${backgroundColor}`}
+    >
       <div className=" mb-6">
-        <span className="text-5xl font-extrabold bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent">
+        <span className="text-5xl font-extrabold bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent flex justify-center">
           Why us !
         </span>
         <div className="grid grid-cols-1 md:grid-cols-4 justify-center mt-12 gap-6">

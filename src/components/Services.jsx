@@ -7,14 +7,20 @@ const fadeInScaleRotate = {
   animate: { opacity: 1, scale: 1, rotate: 0 },
 };
 
-const Services = () => {
+const Services = ({ theme, toggleTheme }) => {
+  const textColor = theme === "light" ? "text-black" : "text-white";
+  const buttonColor = theme === "light" ? "bg-white" : "bg-gray-800";
+  const backgroundColor = theme === "light" ? "bg-white" : "bg-[#0f0f0f]"; // Adjust background color based on theme
+
   const [ref, inView] = useInView({
     triggerOnce: false,
   });
   return (
-    <div className="mt-20 text-center" id="services_id">
-      <div className="text-6xl font-extrabold mb-6">
-        <span className="bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent">
+    <div
+      className={`py-20 text-center" id="services_id ${textColor} ${backgroundColor}`}
+    >
+      <div className="text-6xl font-extrabold ">
+        <span className="bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent flex justify-center ">
           Services
         </span>
       </div>
