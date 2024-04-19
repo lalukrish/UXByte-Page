@@ -8,18 +8,25 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaDribbble } from "react-icons/fa";
 
+
 const Footer = ({ theme, toggleTheme }) => {
   const textColor = theme === "light" ? "text-black" : "text-white";
   const buttonColor = theme === "light" ? "bg-white" : "bg-gray-800";
   const backgroundColor = theme === "light" ? "bg-white" : "bg-[#0f0f0f]"; // Adjust background color based on theme
+  const LogoChange =
+    theme === "light" ? "/assets/black.svg" : "/assets/white.svg";
+  const borderColor = theme === "light" ? "border-black" : "border-white";
+  const hoverColor = theme === "light" ? "hover:text-black" : "hover:text-white";
+  // const textColor2 = theme === "light" ? "text-black" : "text-white"
 
   console.log("text", textColor, backgroundColor);
+
   return (
     <>
       <div className={`py-28 ${textColor} ${backgroundColor}`}>
         {" "}
         <footer className={` dark:bg-black ${textColor} ${backgroundColor}`}>
-          <hr className="border-t border-white " />
+          <hr className={`border-t ${borderColor}`   } />
 
           <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
             <div className="md:flex md:justify-between">
@@ -29,7 +36,7 @@ const Footer = ({ theme, toggleTheme }) => {
                   className="flex items-center space-x-3 rtl:space-x-reverse"
                 >
                   <Image
-                    src="https://res.cloudinary.com/dvjjzsilz/image/upload/v1711783336/e5c19dbcnmyg9h682icc.png"
+                  src={LogoChange}
                     alt=" Logo"
                     width={140}
                     height={40}
@@ -38,31 +45,31 @@ const Footer = ({ theme, toggleTheme }) => {
                 UXByte
               </span> */}
                 </a>
-                <div className="flex mt-8 sm:justify-center">
+                <div className="flex mt-8 sm:justify-center gap-5  ">
                   <a
-                    href="#"
-                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                    href="https://dribbble.com/UXByte_Studio" target="blank"
+                  className={`text-gray-500 ${hoverColor} text-2xl`}
                   >
-                    <FaFacebookF />
-                    <span className="sr-only">Facebook page</span>
+                    <FaDribbble />
+                    <span className="sr-only">Dribble</span>
                   </a>
                   <a
-                    href="#"
-                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+                    href="https://www.instagram.com/uxbyte?igsh=MWRiMjZ5ZWJobjdxYw==" target="blank"
+                    className={`text-gray-500 ${hoverColor} text-2xl`}
                   >
                     <FaInstagram />
                     <span className="sr-only">Instagram community</span>
                   </a>
                   <a
-                    href="#"
-                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+                    href="https://twitter.com/uxbytestudio" target="blank"
+                    className={`text-gray-500 ${hoverColor} text-2xl`}
                   >
-                    <FaGithub />
-                    <span className="sr-only">GitHub page</span>
+                    <FaXTwitter />
+                    <span className="sr-only">Twitter</span>
                   </a>
                   <a
-                    href="#"
-                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+                    href="https://www.linkedin.com/company/uxbyte-studio/" target="blank"
+                    className={`text-gray-500 ${hoverColor} text-2xl`}
                   >
                     <FaLinkedinIn />
                     <span className="sr-only">LinkedIn account</span>
@@ -87,10 +94,10 @@ const Footer = ({ theme, toggleTheme }) => {
               </div>
               <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                 <div>
-                  <h2 className="mb-6 text-xl font-light	  text-gray-400 ">
+                  <h2 className="mb-6 text-2xl font-medium	">
                     Menu
                   </h2>
-                  <ul className=" dark:text-gray-400 font-medium">
+                  <ul className="  font-light">
                     <li className="mb-4">
                       <Link href="" className="hover:underline">
                         Home
@@ -124,10 +131,10 @@ const Footer = ({ theme, toggleTheme }) => {
                   </ul>
                 </div>
                 <div>
-                  <h2 className="mb-6 text-xl font-light text-gray-400">
+                  <h2 className="mb-6 text-2xl font-medium ">
                     Our Services
                   </h2>
-                  <ul className=" dark:text-gray-400 font-medium">
+                  <ul className="  font-light">
                     <li className="mb-4">
                       <p> UI UX Designs</p>
                     </li>
@@ -149,10 +156,10 @@ const Footer = ({ theme, toggleTheme }) => {
                   </ul>
                 </div>
                 <div>
-                  <h2 className="mb-6 text-xl font-light text-gray-400">
+                  <h2 className="mb-6 text-2xl font-medium ">
                     Contact Us
                   </h2>
-                  <ul className=" dark:text-gray-400 font-medium">
+                  <ul className="  font-light">
                     <li className="mb-4">
                       <a href="tel:+918883367373" className="hover:underline 	">
                         Phone: +91 88833 67373
