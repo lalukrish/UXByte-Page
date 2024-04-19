@@ -1,13 +1,24 @@
 import { BsFillLightningChargeFill } from "react-icons/bs";
 import React from "react";
 import Image from "next/image";
+<<<<<<< HEAD
 const Hero = () => {
+=======
+const Hero = ({ theme, toggleTheme }) => {
+  const textColor = theme === "light" ? "text-black" : "text-white";
+  const buttonColor = theme === "light" ? "bg-white" : "bg-gray-800";
+  const backgroundColor = theme === "light" ? "bg-white" : "bg-[#0f0f0f]"; // Adjust background color based on theme
+
+>>>>>>> d987262e665e9426770cd0971640edf9fe95e43a
   return (
     <div
-      className="flex flex-col items-center justify-center min-h-screen"
+      className={`flex flex-col items-center justify-center min-h-screen  ${textColor} ${backgroundColor}`}
       style={{
         backgroundImage:
-          "radial-gradient(ellipse farthest-side at center, #240247, #0f0f0f 90%, transparent 100%)",
+          theme === "dark"
+            ? "radial-gradient(ellipse farthest-side at center, #240247, #0f0f0f 90%, transparent 100%)"
+            : "none",
+
         backgroundSize: "100% 100%",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
@@ -28,7 +39,11 @@ const Hero = () => {
       </div>
       <h1
         className="text-7xl md:text-9xl font-bold text-transparent whitespace-nowrap md:mb-20"
-        style={{ WebkitTextStroke: "1px rgba(255, 255, 255, 0.2)" }}
+        style={{
+          WebkitTextStroke: "1px rgba(255, 255, 255, 0.2)",
+          color: "transparent",
+          letterSpacing: "0.08em",
+        }}
       >
         UXBYTE
       </h1>
@@ -37,7 +52,7 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center justify-center text-center">
           <div className="flex flex-col md:flex-row text-3xl items-center md:mt-1 lg:mt-40 font-semibold ">
             <span>
-              <span className="bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text  text-transparent">
                 Code{" "}
               </span>
               the Future.{" "}
@@ -63,7 +78,7 @@ const Hero = () => {
       </div>
       <div className="mt-8  md:mt-16 md:mb-20">
         <button
-          className="bg-white text-black py-4 px-6 flex rounded-lg hover:bg-gray-200 my-4 md:my-0 font-semibold"
+          className="bg-white text-black py-3 px-6 flex rounded-lg hover:bg-gray-200 my-4 md:my-0 font-semibold"
           onClick={() => {
             console.log("object");
           }}
