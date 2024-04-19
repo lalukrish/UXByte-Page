@@ -13,7 +13,7 @@ const Hero = ({ theme, toggleTheme }) => {
         backgroundImage:
           theme === "dark"
             ? "radial-gradient(ellipse farthest-side at center, #240247, #0f0f0f 90%, transparent 100%)"
-            : "none",
+            : "radial-gradient(ellipse farthest-side at left top, #f0f0f0, #e0e0e0 10%, transparent 100%)",
 
         backgroundSize: "100% 100%",
         backgroundRepeat: "no-repeat",
@@ -36,7 +36,10 @@ const Hero = ({ theme, toggleTheme }) => {
       <h1
         className="text-7xl md:text-9xl font-bold text-transparent whitespace-nowrap md:mb-20"
         style={{
-          WebkitTextStroke: "1px rgba(255, 255, 255, 0.2)",
+          WebkitTextStroke:
+            theme === "dark"
+              ? "1px rgba(255, 255, 255, 0.2)"
+              : "1px rgba(128, 128, 128, 0.5)",
           color: "transparent",
           letterSpacing: "0.08em",
         }}
