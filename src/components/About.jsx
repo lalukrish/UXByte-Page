@@ -1,9 +1,15 @@
 import React from "react";
 import { Image } from 'react';
 
-const About = () => {
+const About = ({ theme, toggleTheme }) => {
+  const textColor = theme === "light" ? "text-black" : "text-white";
+  const buttonColor = theme === "light" ? "bg-white" : "bg-gray-800";
+  const backgroundColor = theme === "light" ? "bg-white" : "bg-[#0f0f0f]"; // Adjust background color based on theme
+
   return (
-    <div className="md:mx-20 mx-4" id="aboutUs_id">
+    <div
+      className={`p-4 md:p-20 ${textColor} ${backgroundColor}  id="aboutUs_id"`}
+    >
       <div className="text-5xl font-extrabold mb-8 flex items-center">
         <span className="bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent">
           About
@@ -71,8 +77,6 @@ const About = () => {
           </div>
         </div>
       </div>
-
-      <div></div>
     </div>
   );
 };
