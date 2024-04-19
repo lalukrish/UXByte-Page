@@ -17,6 +17,7 @@ const Footer = ({ theme, toggleTheme }) => {
     theme === "light" ? "/assets/black.svg" : "/assets/white.svg";
   const borderColor = theme === "light" ? "border-black" : "border-white";
   const hoverColor = theme === "light" ? "hover:text-black" : "hover:text-white";
+  // const textColor2 = theme === "light" ? "text-black" : "text-white"
 
   console.log("text", textColor, backgroundColor);
 
@@ -93,10 +94,10 @@ const Footer = ({ theme, toggleTheme }) => {
               </div>
               <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                 <div>
-                  <h2 className="mb-6 text-xl font-light	  text-gray-400 ">
+                  <h2 className="mb-6 text-2xl font-medium	">
                     Menu
                   </h2>
-                  <ul className=" dark:text-gray-400 font-medium">
+                  <ul className="  font-light">
                     <li className="mb-4">
                       <Link href="" className="hover:underline">
                         Home
@@ -130,10 +131,10 @@ const Footer = ({ theme, toggleTheme }) => {
                   </ul>
                 </div>
                 <div>
-                  <h2 className="mb-6 text-xl font-light text-gray-400">
+                  <h2 className="mb-6 text-2xl font-medium ">
                     Our Services
                   </h2>
-                  <ul className=" dark:text-gray-400 font-medium">
+                  <ul className="  font-light">
                     <li className="mb-4">
                       <p> UI UX Designs</p>
                     </li>
@@ -155,10 +156,10 @@ const Footer = ({ theme, toggleTheme }) => {
                   </ul>
                 </div>
                 <div>
-                  <h2 className="mb-6 text-xl font-light text-gray-400">
+                  <h2 className="mb-6 text-2xl font-medium ">
                     Contact Us
                   </h2>
-                  <ul className=" dark:text-gray-400 font-medium">
+                  <ul className="  font-light">
                     <li className="mb-4">
                       <a href="tel:+918883367373" className="hover:underline 	">
                         Phone: +91 88833 67373
