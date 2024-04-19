@@ -39,7 +39,7 @@ const Services = ({ theme, toggleTheme }) => {
               <span className="text-blue-500 ">Design</span>
             </div>
             <ul
-              className="my-6  font-light text-start"
+              className="my-6  font-medium	 text-start"
               style={{ fontSize: 32 }}
             >
               <li className="my-4">Brand Identity</li>
@@ -63,7 +63,7 @@ const Services = ({ theme, toggleTheme }) => {
               <span className="text-purple-500">Development</span>
             </div>
             <ul
-              className="my-6  font-light text-start"
+              className="my-6  font-medium text-start"
               style={{ fontSize: 32 }}
             >
               <li className="my-4">Web Development</li>
@@ -86,7 +86,7 @@ const Services = ({ theme, toggleTheme }) => {
               <span className="text-fuchsia-500">Marketing</span>
             </div>
             <ul
-              className="my-6  font-light text-start"
+              className="my-6  font-medium text-start"
               style={{ fontSize: 32 }}
             >
               <li className="my-4">Branding</li>

@@ -22,7 +22,7 @@ const LetsTalk = ({ theme, toggleTheme }) => {
         </span>
       </div>
       <div className="mx-auto max-w-xl ">
-        <p className=" text-2xl font-light mb-8 " style={{ fontSize: 28 }}>
+        <p className=" text-2xl font-normal mb-8 " style={{ fontSize: 28 }}>
           Get a personalized plan. Schedule a free consultation to discuss your
           specific needs.
         </p>
