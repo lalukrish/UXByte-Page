@@ -1,4 +1,5 @@
 import React from "react";
+import { Image } from 'react';
 
 const About = ({ theme, toggleTheme }) => {
   const textColor = theme === "light" ? "text-black" : "text-white";
@@ -18,43 +19,44 @@ const About = ({ theme, toggleTheme }) => {
             src="https://res.cloudinary.com/dvjjzsilz/image/upload/v1711784029/atwww59mdcbnvxvpxmei.png"
             className="h-38 w-36 md:w-48 md:hidden"
             alt=""
-            width={32}
-            height={20}
+            // width={374}
+            // height={267}
+            style={{ width: '100%', height: '100%' }}
           />
         </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 md:justify-center md:items-center">
         <div className="col-span-1 md:col-span-2 mb-20">
-          <ul className="list-disc ml-8 text-xl">
+          <ul className="text-xl list-disc ml-8 lg:text-2xl">
             <li className="mb-4 font-light">
-              <span className="text-purple-300 font-bold">
+              <span className="text-purple-300 font-semibold">
                 Passionate Technologists:
               </span>{" "}
-              We're a team that gets fired up about innovation and creating
+              We&apos;re a team that gets fired up about innovation and creating
               awesome tech.
             </li>
             <li className="mb-4 font-light">
-              <span className="text-purple-300 font-bold">
+              <span className="text-purple-300 font-semibold">
                 End-to-End Expertise:
               </span>{" "}
               We handle everything from design and development to launch,
               ensuring a seamless product journey.
             </li>
             <li className="mb-4 font-light">
-              <span className="text-purple-300 font-bold">
+              <span className="text-purple-300 font-semibold">
                 Affordable Solutions:
               </span>{" "}
               Our flat monthly subscription makes cutting-edge product creation
               accessible to businesses of all sizes.
             </li>
             <li className="mb-4 font-light">
-              <span className="text-purple-300 font-bold">Growth Focused:</span>{" "}
+              <span className="text-purple-300 font-semibold">Growth Focused:</span>{" "}
               We believe in the power of technology to drive success and are
               dedicated to helping businesses achieve their goals.
             </li>
             <li className="font-light">
-              <span className="text-purple-300 font-bold">
+              <span className="text-purple-300 font-semibold">
                 Agile & Collaborative:
               </span>{" "}
               We use agile development methodologies to ensure clear
@@ -66,7 +68,7 @@ const About = ({ theme, toggleTheme }) => {
         <div className="hidden sm:block">
           <div className="flex justify-center md:col-span-1 md:mb-20">
             <img
-              src="https://res.cloudinary.com/dvjjzsilz/image/upload/v1711784029/atwww59mdcbnvxvpxmei.png"
+              src="/assets/aboutus.png"
               className="h-80 w-80 md:w-80"
               alt=""
               width={100}

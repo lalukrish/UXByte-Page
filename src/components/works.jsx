@@ -17,7 +17,7 @@ const Works = ({ theme, toggleTheme }) => {
     <div className={`"hidden md:block" ${textColor} ${backgroundColor} `}>
       <div className="text-6xl font-extrabold  text-center" id="works_id">
         <div
-          className="absolute md:my-20  inset-x-0"
+          className="absolute md:my-20  inset-x-0 "
           style={{ textAlign: "center" }}
         >
           {" "}
@@ -26,8 +26,8 @@ const Works = ({ theme, toggleTheme }) => {
           </span>
         </div>
       </div>
-      <div className="md:block  mr-28">
-        <div className="flex justify-center items-center h-screen">
+      <div className="md:block  md:ml-20 mr-28 ">
+        <div className="flex justify-center items-center h-screen md:mt-0">
           <div className="relative flex">
             {/* First Cross */}
             <div

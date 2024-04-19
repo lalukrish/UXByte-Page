@@ -13,21 +13,23 @@ const LetsTalk = ({ theme, toggleTheme }) => {
     >
       <div className="text-6xl font-extrabold mb-6">
         <span className="bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent">
-          Let's talk!
+          Let&apos;s talk!
         </span>
       </div>
-      <div className="mx-auto max-w-lg">
-        <p className="text-2xl font-medium mb-8">
+      <div className="mx-auto max-w-xl ">
+        <p className=" text-2xl font-light mb-8 " style={{ fontSize: 28 }}>
           Get a personalized plan. Schedule a free consultation to discuss your
           specific needs.
         </p>
-        <button
-          type="button"
-          className={`${buttonColor} hover:bg-gray-200 font-medium rounded-lg text-2xl px-5 py-2.5`}
-          onClick={toggleTheme}
-        >
-          Design a Quote
-        </button>
+        <div className="flex items-center justify-center">
+          <button
+            type="button"
+            className={`${buttonColor} hover:bg-gray-200 font-medium rounded-lg text-2xl px-5 py-2.5`}
+            onClick={toggleTheme}
+          >
+            Design a Quote
+          </button>
+        </div>
       </div>
     </div>
   );

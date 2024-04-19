@@ -72,7 +72,7 @@ const Hero = ({ theme, toggleTheme }) => {
           brand to thrive in the ever-evolving digital landscape.
         </div>
       </div>
-      <div className="mt-8  md:mt-6 md:mb-20">
+      <div className="mt-8  md:mt-16 md:mb-20">
         <button
           className="bg-white text-black py-3 px-6 flex rounded-lg hover:bg-gray-200 my-4 md:my-0 font-semibold"
           onClick={() => {

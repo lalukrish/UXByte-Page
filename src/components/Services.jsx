@@ -24,7 +24,7 @@ const Services = ({ theme, toggleTheme }) => {
           Services
         </span>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center md:mt-0">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 justify-items-center">
           <motion.div
             ref={ref}
@@ -38,7 +38,10 @@ const Services = ({ theme, toggleTheme }) => {
             <div className="text-start">
               <span className="text-blue-500 ">Design</span>
             </div>
-            <ul className="my-6 text-3xl font-medium text-start">
+            <ul
+              className="my-6  font-light text-start"
+              style={{ fontSize: 32 }}
+            >
               <li className="my-4">Brand Identity</li>
               <li className="my-4">UI Design</li>
               <li className="my-4">UX Design</li>
@@ -59,7 +62,10 @@ const Services = ({ theme, toggleTheme }) => {
               {" "}
               <span className="text-purple-500">Development</span>
             </div>
-            <ul className="my-6 text-3xl font-medium text-start">
+            <ul
+              className="my-6  font-light text-start"
+              style={{ fontSize: 32 }}
+            >
               <li className="my-4">Web Development</li>
               <li className="my-4">Saas Development</li>
               <li className="my-4">Mobile Apps</li>
@@ -79,7 +85,10 @@ const Services = ({ theme, toggleTheme }) => {
             <div className="text-start">
               <span className="text-fuchsia-500">Marketing</span>
             </div>
-            <ul className="my-6 text-3xl font-medium text-start">
+            <ul
+              className="my-6  font-light text-start"
+              style={{ fontSize: 32 }}
+            >
               <li className="my-4">Branding</li>
               <li className="my-4">Strategy</li>
               <li className="my-4">SEO</li>
