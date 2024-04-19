@@ -13,6 +13,7 @@ import MenuItem from "@mui/material/MenuItem";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { BsSun, BsMoon } from "react-icons/bs";
+import { useRouter } from "next/navigation";
 
 const pages = ["About", "Why Us", "Work", "Services", "Lets talk"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -26,6 +27,7 @@ const Navbar = ({
   toggleTheme,
   theme,
 }) => {
+  const router = useRouter();
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorElUser, setAnchorElUser] = useState(null);
 
@@ -49,6 +51,10 @@ const Navbar = ({
   const backgroundColor = theme === "light" ? "bg-white" : "bg-[#0f0f0f]"; // Adjust background color based on theme
   const LogoChange =
     theme === "light" ? "/assets/black.svg" : "/assets/white.svg";
+
+  const handleConnect = () => {
+    router.push("/contact-us");
+  };
 
   return (
     <div className={`${textColor} ${backgroundColor}`}>
@@ -162,6 +168,7 @@ const Navbar = ({
                       backgroundColor: "white !important", // Override active background color
                     },
                   }}
+                  onClick={handleConnect}
                 >
                   Let's Connect
                 </Button>

@@ -6,6 +6,8 @@ const Hero = ({ theme, toggleTheme }) => {
   const buttonColor = theme === "light" ? "bg-white" : "bg-gray-800";
   const backgroundColor = theme === "light" ? "bg-white" : "bg-[#0f0f0f]"; // Adjust background color based on theme
 
+  const descriptionColor = theme === "light" ? "#6000AD" : "#CBBAFB";
+
   return (
     <div
       className={`flex flex-col items-center justify-center min-h-screen  ${textColor} ${backgroundColor}`}
@@ -13,7 +15,7 @@ const Hero = ({ theme, toggleTheme }) => {
         backgroundImage:
           theme === "dark"
             ? "radial-gradient(ellipse farthest-side at center, #240247, #0f0f0f 90%, transparent 100%)"
-            : "radial-gradient(ellipse farthest-side at left top, #f0f0f0, #e0e0e0 10%, transparent 100%)",
+            : "none",
 
         backgroundSize: "100% 100%",
         backgroundRepeat: "no-repeat",
@@ -67,8 +69,8 @@ const Hero = ({ theme, toggleTheme }) => {
       </div>
       <div className="md:absolute">
         <div
-          className="text-xs md:text-1xl  text-center mx-3 md:mx-0  md:px-72  md:mt-80 my-4 text-xl"
-          style={{ color: "#CBBAFB" }}
+          className="text-xs md:text-1xl  text-center mx-3 md:mx-0  md:px-72  md:mt-80 my-4 text-xl font-light"
+          style={{ color: descriptionColor }}
         >
           We bridge the gap between cutting-edge design and powerful
           development. From sleek websites & intuitive apps we empower your
