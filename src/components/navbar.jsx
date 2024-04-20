@@ -150,9 +150,9 @@ const Navbar = ({
                   }}
                 >
                   {theme === "light" ? (
-                    <BsSun className="ml-4   text-black " />
+                    <BsMoon className="ml-4 text-black" />
                   ) : (
-                    <BsMoon className="ml-4" />
+                    <BsSun className="ml-4    " />
                   )}
                 </IconButton>
                 <Button
@@ -207,7 +207,7 @@ const Navbar = ({
                   aria-controls="menu-appbar"
                   aria-haspopup="true"
                   onClick={handleOpenNavMenu}
-                  color="inherit"
+                  color={theme === "light" ? "black" : "inherit"}
                 >
                   <MenuIcon />
                 </IconButton>
