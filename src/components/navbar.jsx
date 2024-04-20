@@ -86,6 +86,16 @@ const Navbar = ({
                     mx: 2,
                     color: theme === "light" ? "black" : "white",
                     textTransform: "none",
+                    boxShadow: "none !important", // Remove box shadow
+                    "&:hover": {
+                      color: "rgb(220, 20, 60)", // Text color change on hover
+                    },
+                    "&.MuiButton-root:hover": {
+                      backgroundColor: "transparent", // Remove hover background color
+                    },
+                    "&.MuiButton-root:focus": {
+                      outline: "none", // Remove focus outline
+                    },
                   }}
                 >
                   About
@@ -96,16 +106,37 @@ const Navbar = ({
                     mx: 2,
                     color: theme === "light" ? "black" : "white",
                     textTransform: "none",
+                    boxShadow: "none !important", // Remove box shadow
+                    "&:hover": {
+                      color: "rgb(220, 20, 60)", // Text color change on hover
+                    },
+                    "&.MuiButton-root:hover": {
+                      backgroundColor: "transparent", // Remove hover background color
+                    },
+                    "&.MuiButton-root:focus": {
+                      outline: "none", // Remove focus outline
+                    },
                   }}
                 >
                   Why Us
                 </Button>
+
                 <Button
                   onClick={workLocation}
                   sx={{
                     mx: 2,
                     color: theme === "light" ? "black" : "white",
                     textTransform: "none",
+                    boxShadow: "none !important", // Remove box shadow
+                    "&:hover": {
+                      color: "rgb(220, 20, 60)", // Text color change on hover
+                    },
+                    "&.MuiButton-root:hover": {
+                      backgroundColor: "transparent", // Remove hover background color
+                    },
+                    "&.MuiButton-root:focus": {
+                      outline: "none", // Remove focus outline
+                    },
                   }}
                 >
                   Work
@@ -116,6 +147,16 @@ const Navbar = ({
                     mx: 2,
                     color: theme === "light" ? "black" : "white",
                     textTransform: "none",
+                    boxShadow: "none !important", // Remove box shadow
+                    "&:hover": {
+                      color: "rgb(220, 20, 60)", // Text color change on hover
+                    },
+                    "&.MuiButton-root:hover": {
+                      backgroundColor: "transparent", // Remove hover background color
+                    },
+                    "&.MuiButton-root:focus": {
+                      outline: "none", // Remove focus outline
+                    },
                   }}
                 >
                   Services
@@ -126,6 +167,16 @@ const Navbar = ({
                     mx: 2,
                     color: theme === "light" ? "black" : "white",
                     textTransform: "none",
+                    boxShadow: "none !important", // Remove box shadow
+                    "&:hover": {
+                      color: "rgb(220, 20, 60)", // Text color change on hover
+                    },
+                    "&.MuiButton-root:hover": {
+                      backgroundColor: "transparent", // Remove hover background color
+                    },
+                    "&.MuiButton-root:focus": {
+                      outline: "none", // Remove focus outline
+                    },
                   }}
                 >
                   Lets talk
@@ -165,7 +216,7 @@ const Navbar = ({
                     borderRadius: "0.5rem",
                     textTransform: "none",
                     "&:hover": {
-                      backgroundColor: "white !important", // Override hover background color
+                      backgroundColor: "#424258 !important", // Override hover background color
                     },
                     "&:active": {
                       backgroundColor: "white !important", // Override active background color

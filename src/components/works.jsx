@@ -12,6 +12,7 @@ const Works = ({ theme, toggleTheme }) => {
   const textColor = theme === "light" ? "text-black" : "text-white";
   const buttonColor = theme === "light" ? "bg-white" : "bg-gray-800";
   const backgroundColor = theme === "light" ? "bg-white" : "bg-[#0f0f0f]"; // Adjust background color based on theme
+  const dashColor = theme === "light" ? "border-black" : "border-white";
 
   return (
     <div div id="works_id">
@@ -35,7 +36,9 @@ const Works = ({ theme, toggleTheme }) => {
                 className="relative "
                 style={{ width: "32rem", height: "16rem" }}
               >
-                <div className="absolute bg-transparent w-full h-1/3 top-1/2 left-0 transform -translate-y-1/2 border-b  border-dashed border-white  flex justify-center items-center ml-4">
+                <div
+                  className={`absolute bg-transparent w-full h-1/3 top-1/2 left-0 transform -translate-y-1/2 border-b  border-dashed ${dashColor}  flex justify-center items-center ml-4`}
+                >
                   <div
                     className=" absolute text-4xl mb-12"
                     style={{ marginLeft: 1500, fontWeight: 600 }}
@@ -44,16 +47,22 @@ const Works = ({ theme, toggleTheme }) => {
                     Edtech
                   </div>
                 </div>
-                <div className="absolute bg-transparent h-full w-1/12 top-0 left-1/2 transform -translate-x-1/2 border-r border-dashed border-white my-12 ml-16"></div>
+                <div
+                  className={`absolute bg-transparent h-full w-1/12 top-0 left-1/2 transform -translate-x-1/2 border-r border-dashed ${dashColor} my-12 ml-16`}
+                ></div>
               </div>
               {/* Second Cross */}
               <div
                 className="relative "
                 style={{ width: "40rem", height: "16rem" }}
               >
-                <div className="absolute bg-transparent w-full h-1/3 top-1/2 left-0 transform -translate-y-1/2 border-b border-dashed border-white ml-4"></div>
+                <div
+                  className={`absolute bg-transparent w-full h-1/3 top-1/2 left-0 transform -translate-y-1/2 border-b border-dashed ${dashColor} ml-4`}
+                ></div>
                 <div></div>
-                <div className="absolute bg-transparent h-full w-1/3 top-0 left-1/3 transform -translate-x-1/2 border-r border-dashed border-white my-12">
+                <div
+                  className={`absolute bg-transparent h-full w-1/3 top-0 left-1/3 transform -translate-x-1/2 border-r border-dashed ${dashColor} my-12`}
+                >
                   <div
                     className="absolute my-5 text-4xl right-44 "
                     style={{ fontWeight: 600 }}

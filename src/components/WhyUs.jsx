@@ -5,7 +5,7 @@ const WhyUs = ({ theme, toggleTheme }) => {
   const textColor = theme === "light" ? "text-black" : "text-white";
   const buttonColor = theme === "light" ? "bg-white" : "bg-red-500";
   const backgroundColor = theme === "light" ? "bg-white" : "bg-[#0f0f0f]"; // Adjust background color based on theme
-  const imageColor = theme === "light" ? "text-black" : "text-gray-500";
+  const imageColor = theme === "light" ? "invert" : "brightness-100";
 
   return (
     <div
@@ -20,7 +20,7 @@ const WhyUs = ({ theme, toggleTheme }) => {
             <Image
               src="/assets/pie-and-charts.svg"
               alt=""
-              className={`filter brightness-100 hover:brightness-75`}
+              className={`filter ${imageColor} hover:brightness-75`}
               width={180}
               height={200}
             />
@@ -45,7 +45,7 @@ const WhyUs = ({ theme, toggleTheme }) => {
             <Image
               src="/assets/smart-people.svg"
               alt=""
-              className="filter brightness-100 hover:brightness-75"
+              className={`filter ${imageColor} hover:brightness-75`}
               width={180}
               height={200}
             />
@@ -70,7 +70,7 @@ const WhyUs = ({ theme, toggleTheme }) => {
             <Image
               src="/assets/designer-working.svg"
               alt=""
-              className="filter brightness-100 hover:brightness-75"
+              className={`filter ${imageColor} hover:brightness-75`}
               width={180}
               height={200}
             />
@@ -95,7 +95,7 @@ const WhyUs = ({ theme, toggleTheme }) => {
             <Image
               src="/assets/business-deal.svg"
               alt=""
-              className="filter brightness-100 hover:brightness-75"
+              className={`filter ${imageColor} hover:brightness-75`}
               width={180}
               height={200}
             />
