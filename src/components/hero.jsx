@@ -8,6 +8,9 @@ const Hero = ({ theme, toggleTheme }) => {
 
   const descriptionColor = theme === "light" ? "#6000AD" : "#CBBAFB";
 
+  const colorsChangeButton =
+    theme === "light" ? "bg-black text-white" : "bg-white text-black";
+
   return (
     <div
       className={`flex flex-col items-center justify-center min-h-screen  ${textColor} ${backgroundColor}`}
@@ -79,7 +82,7 @@ const Hero = ({ theme, toggleTheme }) => {
       </div>
       <div className="mt-8  md:mt-16 md:mb-20">
         <button
-          className="bg-white text-black py-3 px-6 flex rounded-lg hover:bg-gray-200 my-4 md:my-0 font-semibold"
+          className={`${colorsChangeButton} py-3 px-6 flex rounded-lg hover:bg-gray-200 my-4 md:my-0 font-semibold`}
           onClick={() => {
             console.log("object");
           }}

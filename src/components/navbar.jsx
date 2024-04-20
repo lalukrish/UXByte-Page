@@ -52,6 +52,9 @@ const Navbar = ({
   const LogoChange =
     theme === "light" ? "/assets/black.svg" : "/assets/white.svg";
 
+  const colorsChangeButton =
+    theme === "light" ? "bg-black text-white" : "bg-white text-black";
+
   const handleConnect = () => {
     router.push("/contact-us");
   };
@@ -157,7 +160,7 @@ const Navbar = ({
                 </IconButton>
                 <Button
                   color="inherit"
-                  className="text-black bg-white px-6 h-10 my-2 ml-16"
+                  className={`${colorsChangeButton} px-6 h-10 my-2 ml-16`}
                   sx={{
                     borderRadius: "0.5rem",
                     textTransform: "none",
