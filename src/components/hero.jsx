@@ -1,13 +1,17 @@
 import { BsFillLightningChargeFill } from "react-icons/bs";
 import React from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+
 const Hero = ({ theme, toggleTheme }) => {
   const textColor = theme === "light" ? "text-black" : "text-white";
   const buttonColor = theme === "light" ? "bg-white" : "bg-gray-800";
   const backgroundColor = theme === "light" ? "bg-white" : "bg-[#0f0f0f]"; // Adjust background color based on theme
 
   const descriptionColor = theme === "light" ? "#6000AD" : "#CBBAFB";
-
+  const router = useRouter()
+  const handleConnect = () => {
+    router.push("/contact-us");}
   const colorsChangeButton =
     theme === "light" ? "bg-black text-white" : "bg-white text-black";
 
@@ -83,9 +87,7 @@ const Hero = ({ theme, toggleTheme }) => {
       <div className="mt-8  md:mt-16 md:mb-20">
         <button
           className={`${colorsChangeButton} py-3 px-6 flex rounded-lg hover:bg-gray-800 my-4 md:my-0 font-semibold`}
-          onClick={() => {
-            console.log("object");
-          }}
+          onClick={handleConnect}
         >
           Let&apos;s Connect
           <span className="mx-2 my-1">

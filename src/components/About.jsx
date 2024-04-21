@@ -65,7 +65,7 @@ const About = ({ theme, toggleTheme }) => {
               We believe in the power of technology to drive success and are
               dedicated to helping businesses achieve their goals.
             </li>
-            <li className="font-light">
+            <li className="font-thin">
               <span className={` ${headColor} font-semibold`}>
                 Agile & Collaborative:
               </span>{" "}
@@ -86,7 +86,7 @@ const About = ({ theme, toggleTheme }) => {
               height={100}
             />:<img
             src="/assets/aboutlight.png"
-            className="h-80 w-80 md:w-80"
+            className="h-60 w-80 md:w-80"
             alt=""
             width={100}
             height={100}

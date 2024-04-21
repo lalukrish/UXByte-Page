@@ -40,10 +40,10 @@ const Works = ({ theme, toggleTheme }) => {
                   className={`absolute bg-transparent w-full h-1/3 top-1/2 left-0 transform -translate-y-1/2 border-b  border-dashed ${dashColor}  flex justify-center items-center ml-4`}
                 >
                   <div
-                    className=" absolute text-4xl mb-12"
+                    className=" absolute text-4xl mb-12 hover:text-purple-500"
                     style={{ marginLeft: 1500, fontWeight: 600 }}
                   >
-                    {" "}
+      
                     Edtech
                   </div>
                 </div>
@@ -64,7 +64,7 @@ const Works = ({ theme, toggleTheme }) => {
                   className={`absolute bg-transparent h-full w-1/3 top-0 left-1/3 transform -translate-x-1/2 border-r border-dashed ${dashColor} my-12`}
                 >
                   <div
-                    className="absolute my-5 text-4xl right-44 "
+                    className="absolute my-5 text-4xl right-44 hover:text-purple-500"
                     style={{ fontWeight: 600 }}
                   >
                     Fintech
@@ -72,25 +72,25 @@ const Works = ({ theme, toggleTheme }) => {
                 </div>
               </div>
               <div
-                className="absolute my-16 text-4xl  ml-8 "
+                className="absolute my-16 text-4xl  ml-8 hover:text-purple-500"
                 style={{ fontWeight: 600 }}
               >
                 Foodtech
               </div>
               <div
-                className="absolute ml-8  text-4xl"
+                className="absolute ml-8  text-4xl hover:text-purple-500"
                 style={{ marginTop: 220, fontWeight: 600 }}
               >
                 Traveltech
               </div>
               <div
-                className="absolute   text-4xl"
+                className="absolute   text-4xl hover:text-purple-500"
                 style={{ marginTop: 220, fontWeight: 600, marginLeft: 485 }}
               >
                 Healthcare
               </div>
               <div
-                className="absolute   text-4xl "
+                className="absolute   text-4xl hover:text-purple-500"
                 style={{ marginTop: 220, fontWeight: 600, marginLeft: 960 }}
               >
                 Ecom

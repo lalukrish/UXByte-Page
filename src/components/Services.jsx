@@ -15,6 +15,9 @@ const Services = ({ theme, toggleTheme }) => {
   const [ref, inView] = useInView({
     triggerOnce: false,
   });
+  // const [ref1, inView1] = useInView({
+  //   triggerOnce: false,
+  // });
   return (
     <div
       className={`py-20 text-center" id="services_id ${textColor} ${backgroundColor}`}
@@ -24,10 +27,10 @@ const Services = ({ theme, toggleTheme }) => {
           Services
         </span>
       </div>
-      <div className="flex justify-center md:mt-4">
+      <div className="flex justify-center md:mt-4" ref={ref}>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 justify-items-center">
           <motion.div
-            ref={ref}
+            
             className="text-4xl font-semibold service-item text-center"
             variants={fadeInScaleRotate}
             initial="initial"
@@ -83,6 +86,7 @@ const Services = ({ theme, toggleTheme }) => {
             style={{ marginLeft: "4rem" }}
           >
             <div className="text-start">
+
               <span className="text-fuchsia-500">Marketing</span>
             </div>
             <ul
@@ -93,7 +97,7 @@ const Services = ({ theme, toggleTheme }) => {
               <li className="my-4">Strategy</li>
               <li className="my-4">SEO</li>
               <li className="my-4">Digital Marketing</li>
-              <li className="my-4">Content Writing</li>
+              <li className="my-4" >Content Writing</li>
             </ul>
           </motion.div>
         </div>
