@@ -7,6 +7,8 @@ const WhyUs = ({ theme, toggleTheme }) => {
   const backgroundColor = theme === "light" ? "bg-white" : "bg-[#0f0f0f]"; // Adjust background color based on theme
   const imageColor = theme === "light" ? "invert" : "brightness-100";
 
+  const hoveredImageColor = theme === "light" ? "#38E038" : "#9932CC";
+
   return (
     <div
       className={` py-12 text-center" id="why_us"  ${textColor} ${backgroundColor}`}
@@ -70,7 +72,7 @@ const WhyUs = ({ theme, toggleTheme }) => {
             <Image
               src="/assets/designer-working.svg"
               alt=""
-              className={`filter ${imageColor} hover:brightness-75`}
+              className={`filter ${imageColor} hover:invert`}
               width={180}
               height={200}
             />
@@ -86,7 +88,7 @@ const WhyUs = ({ theme, toggleTheme }) => {
                 style={{ fontSize: 16, fontWeight: 400 }}
               >
                 We create beautiful and user-friendly interfaces that not only
-                look amazing but also deliver an intuitive experience.{" "}
+                look amazing but also deliver an intuitive experience.
               </p>
             </div>
           </div>
