@@ -3,6 +3,7 @@ import React from "react";
 
 const WhyUs = ({ theme, toggleTheme }) => {
   const textColor = theme === "light" ? "text-black" : "text-white";
+  const textColor2 = theme === "light" ? "text-gray-600" : "text-gray-400";
   const buttonColor = theme === "light" ? "bg-white" : "bg-red-500";
   const backgroundColor = theme === "light" ? "bg-white" : "bg-[#0f0f0f]"; // Adjust background color based on theme
   const imageColor = theme === "light" ? "invert" : "brightness-100";
@@ -34,7 +35,7 @@ const WhyUs = ({ theme, toggleTheme }) => {
                 Future Proof Execution
               </h1>
               <p
-                className="mx-20  text-left mr-6 md:ml-10 "
+                className={ `mx-20  text-left mr-6 md:ml-12 ${textColor2} `}
                 style={{ fontSize: 16, fontWeight: 400 }}
               >
                 We build with the latest advancements in mind, ensuring your
@@ -59,7 +60,7 @@ const WhyUs = ({ theme, toggleTheme }) => {
                 Streamlined Efficiency
               </h1>
               <p
-                className="mx-20 text-left mr-6 md:ml-10"
+                className={ `mx-20  text-left mr-6 md:ml-12 ${textColor2} `}
                 style={{ fontSize: 16, fontWeight: 400 }}
               >
                 Our refined processes guarantee transparency and keep your
@@ -84,7 +85,7 @@ const WhyUs = ({ theme, toggleTheme }) => {
                 Design that Captivates
               </h1>
               <p
-                className="mx-20 text-left mr-6 md:ml-9"
+                className={ `mx-20  text-left mr-6 md:ml-12 ${textColor2} `}
                 style={{ fontSize: 16, fontWeight: 400 }}
               >
                 We create beautiful and user-friendly interfaces that not only
@@ -109,7 +110,7 @@ const WhyUs = ({ theme, toggleTheme }) => {
                 End-to-End Partnership
               </h1>
               <p
-                className="mx-20 text-left mr-6 md:ml-8"
+                className={ `mx-20  text-left mr-6 md:ml-11 ${textColor2} `}
                 style={{ fontSize: 16, fontWeight: 400 }}
               >
                 We &apos;re here for the long haul, supporting you from
