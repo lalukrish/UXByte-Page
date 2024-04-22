@@ -10,7 +10,8 @@ const About = ({ theme, toggleTheme }) => {
 
   return (
     <div
-      className={`p-4 md:p-20 ${textColor} ${backgroundColor}  id="aboutUs_id"`}
+      className={`p-4 md:p-20 ${textColor} ${backgroundColor} `}
+      id="aboutUs_id"
     >
       <div className="text-5xl font-extrabold mb-8 flex items-center">
         <span className="bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent">
@@ -70,7 +71,7 @@ const About = ({ theme, toggleTheme }) => {
               We believe in the power of technology to drive success and are
               dedicated to helping businesses achieve their goals.
             </li>
-            <li className="font-light">
+            <li className="font-thin">
               <span className={` ${headColor} font-semibold`}>
                 Agile & Collaborative:
               </span>{" "}
@@ -93,7 +94,7 @@ const About = ({ theme, toggleTheme }) => {
             ) : (
               <img
                 src="/assets/aboutlight.png"
-                className="h-80 w-80 md:w-80"
+                className="h-60 w-80 md:w-80"
                 alt=""
                 width={100}
                 height={100}

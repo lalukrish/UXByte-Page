@@ -1,15 +1,38 @@
 import { BsFillLightningChargeFill } from "react-icons/bs";
 import React from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { motion } from "framer-motion";
+import { useEffect } from "react";
+import { useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 const Hero = ({ theme, toggleTheme }) => {
   const textColor = theme === "light" ? "text-black" : "text-white";
   const buttonColor = theme === "light" ? "bg-white" : "bg-gray-800";
   const backgroundColor = theme === "light" ? "bg-white" : "bg-[#0f0f0f]"; // Adjust background color based on theme
 
   const descriptionColor = theme === "light" ? "#6000AD" : "#CBBAFB";
-
+  const router = useRouter();
+  const handleConnect = () => {
+    router.push("/contact-us");
+  };
   const colorsChangeButton =
     theme === "light" ? "bg-black text-white" : "bg-white text-black";
+
+  const controls = useAnimation();
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start({
+        x: [10, 40, 70, 90],
+        y: [50, 20, 50, 20],
+        transition: { duration: 8, loop: Infinity },
+      });
+    }
+  }, [controls, inView]);
 
   return (
     <div
@@ -47,14 +70,43 @@ const Hero = ({ theme, toggleTheme }) => {
               : "1px rgba(96, 0, 173, 1)",
           color: "transparent",
           letterSpacing: "0.04em",
+          position: "relative", // Ensure relative positioning for containing the ball
         }}
       >
+        <motion.svg
+          viewBox="0 0 100 100"
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+          }}
+        >
+          {/* SVG path outlines the stroke of the text */}
+          <motion.path
+            d="M 10 50 Q 25 20 40 50 Q 55 80 70 50 Q 85 20 90 50"
+            fill="none"
+            stroke="transparent"
+            strokeWidth="1"
+            animate={{ pathLength: 1, opacity: [0, 1] }}
+            transition={{ duration: 2 }}
+          />
+          {/* Circle representing the ball */}
+          <motion.circle
+            ref={ref}
+            cx="10"
+            cy="50"
+            r="2"
+            fill="purple"
+            animate={controls}
+          />
+        </motion.svg>
         UXBYTE
       </h1>
-
       <div className="md:absolute ">
         <div className="flex flex-col md:flex-row items-center justify-center text-center">
-          <div className="flex flex-col md:flex-row text-3xl items-center md:mt-1 lg:mt-40 font-semibold ">
+          <div className="flex flex-col md:flex-row text-3xl md:text-4xl items-center md:mt-1 lg:mt-40 font-semibold ">
             <span>
               <span className="bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text  text-transparent">
                 Code{" "}
@@ -83,9 +135,7 @@ const Hero = ({ theme, toggleTheme }) => {
       <div className="mt-8  md:mt-16 md:mb-20">
         <button
           className={`${colorsChangeButton} py-3 px-6 flex rounded-lg hover:bg-gray-800 my-4 md:my-0 font-semibold`}
-          onClick={() => {
-            console.log("object");
-          }}
+          onClick={handleConnect}
         >
           Let&apos;s Connect
           <span className="mx-2 my-1">

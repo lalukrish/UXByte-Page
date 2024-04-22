@@ -38,15 +38,7 @@ const Works = ({ theme, toggleTheme }) => {
               >
                 <div
                   className={`absolute bg-transparent w-full h-1/3 top-1/2 left-0 transform -translate-y-1/2 border-b  border-dashed ${dashColor}  flex justify-center items-center ml-4`}
-                >
-                  <div
-                    className=" absolute text-4xl mb-12"
-                    style={{ marginLeft: 1500, fontWeight: 600 }}
-                  >
-                    {" "}
-                    Edtech
-                  </div>
-                </div>
+                ></div>
                 <div
                   className={`absolute bg-transparent h-full w-1/12 top-0 left-1/2 transform -translate-x-1/2 border-r border-dashed ${dashColor} my-12 ml-16`}
                 ></div>
@@ -64,7 +56,7 @@ const Works = ({ theme, toggleTheme }) => {
                   className={`absolute bg-transparent h-full w-1/3 top-0 left-1/3 transform -translate-x-1/2 border-r border-dashed ${dashColor} my-12`}
                 >
                   <div
-                    className="absolute my-5 text-4xl right-44 "
+                    className="absolute my-5 text-4xl right-44 hover:text-purple-500"
                     style={{ fontWeight: 600 }}
                   >
                     Fintech
@@ -72,25 +64,31 @@ const Works = ({ theme, toggleTheme }) => {
                 </div>
               </div>
               <div
-                className="absolute my-16 text-4xl  ml-8 "
+                className="absolute text-4xl mt-16 hover:text-purple-500"
+                style={{ marginLeft: 950, fontWeight: 600 }}
+              >
+                Edtech
+              </div>
+              <div
+                className="absolute my-16 text-4xl  ml-8 hover:text-purple-500"
                 style={{ fontWeight: 600 }}
               >
                 Foodtech
               </div>
               <div
-                className="absolute ml-8  text-4xl"
+                className="absolute ml-8  text-4xl hover:text-purple-500"
                 style={{ marginTop: 220, fontWeight: 600 }}
               >
                 Traveltech
               </div>
               <div
-                className="absolute   text-4xl"
+                className="absolute   text-4xl hover:text-purple-500"
                 style={{ marginTop: 220, fontWeight: 600, marginLeft: 485 }}
               >
                 Healthcare
               </div>
               <div
-                className="absolute   text-4xl "
+                className="absolute   text-4xl hover:text-purple-500"
                 style={{ marginTop: 220, fontWeight: 600, marginLeft: 960 }}
               >
                 Ecom
@@ -121,7 +119,9 @@ const Works = ({ theme, toggleTheme }) => {
                 className="relative"
                 style={{ width: "22rem", height: "36rem" }}
               >
-                <div className=" absolute bg-transparent w-full h-1/3 top-80 left-10 transform -translate-y-1/2 border-b border-dashed border-white flex justify-center items-center ml-4">
+                <div
+                  className={`absolute bg-transparent w-full h-1/3 top-80 left-10 transform -translate-y-1/2 border-b border-dashed ${dashColor} flex justify-center items-center ml-4`}
+                >
                   <div
                     className="absolute text-3xl mb-12 mr-48 my-20"
                     style={{ fontWeight: 600 }}
@@ -135,7 +135,9 @@ const Works = ({ theme, toggleTheme }) => {
                     Fintech
                   </div>
                 </div>
-                <div className="absolute bg-transparent h-full w-1/12 top-48 left-40 transform -translate-x-1/2 border-r border-dashed border-white my-12 ml-16"></div>
+                <div
+                  className={`absolute bg-transparent h-full w-1/12 top-48 left-40 transform -translate-x-1/2 border-r border-dashed ${dashColor} my-12 ml-16`}
+                ></div>
               </div>
               {/* Second Cross */}
               <div
@@ -143,7 +145,9 @@ const Works = ({ theme, toggleTheme }) => {
                 style={{ width: "22rem", height: "16rem", marginTop: "2rem" }}
               >
                 {/* Added marginTop */}
-                <div className="absolute bg-transparent w-full  left-10 transform -translate-y-1/2 border-b border-dashed border-white ml-4"></div>
+                <div
+                  className={`absolute bg-transparent w-full  left-10 transform -translate-y-1/2 border-b border-dashed ${dashColor} ml-4`}
+                ></div>
               </div>
               {/* Additional absolute positioned elements */}
             </div>

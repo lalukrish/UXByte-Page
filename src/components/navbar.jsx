@@ -14,6 +14,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { BsSun, BsMoon } from "react-icons/bs";
 import { useRouter } from "next/navigation";
+import { motion } from "framer-motion";
 
 const pages = ["About", "Why Us", "Work", "Services", "Lets talk"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -65,8 +66,6 @@ const Navbar = ({
         <AppBar
           position="static"
           elevation={0}
-          // style={{ backgroundColor: "#0f0f0f" }}
-          // className={themeClass}
           sx={{ backgroundColor: theme === "light" ? "white" : "#0f0f0f" }} // Directly apply the conditional logic
         >
           <Container maxWidth="xl ">
@@ -181,34 +180,40 @@ const Navbar = ({
                 >
                   Lets talk
                 </Button>
-                {/* <IconButton
-                  aria-label="theme change"
-                  color="inherit"
-                  //onClick={handleOpenUserMenu}
-                  onClick={toggleTheme}
-                >
-                  <BsSun className="ml-4" />
-                </IconButton> */}
-                <IconButton
-                  aria-label="theme change"
-                  color="inherit"
-                  onClick={toggleTheme}
-                  sx={{
-                    py: 2,
-                    px: 1,
 
-                    "&:hover": {
-                      boxShadow: "0px 0px 5px 0px rgba(0, 0, 0, 0.2)",
-                      justifyContent: "center",
-                    },
+                <motion.div
+                  whileTap={{
+                    rotate: [0, -30, 30, -30, 30, -30, 30, 0], // Rotate back and forth like a cracker
+                    transition: { duration: 0.5 }, // Control the duration of the animation
                   }}
                 >
-                  {theme === "light" ? (
-                    <BsMoon className="ml-4 text-black" />
-                  ) : (
-                    <BsSun className="ml-4    " />
-                  )}
-                </IconButton>
+                  <IconButton
+                    aria-label="theme change"
+                    color="inherit"
+                    onClick={toggleTheme}
+                    sx={{
+                      py: 2,
+                      px: 1,
+                      position: "relative", // Ensure relative positioning for the container
+                      "&:hover .icon-container": {
+                        // Apply styles to the icon container on hover
+                        justifyContent: "center",
+                      },
+                    }}
+                    disableRipple // Disable ripple effect on click
+                  >
+                    <div className="icon-container">
+                      {" "}
+                      {/* Container for the icon */}
+                      {theme === "light" ? (
+                        <BsMoon className="ml-4 text-black" />
+                      ) : (
+                        <BsSun className="ml-4" />
+                      )}
+                    </div>
+                  </IconButton>
+                </motion.div>
+
                 <Button
                   color="inherit"
                   className={`${colorsChangeButton} px-6 h-10 my-2 ml-16`}
@@ -216,10 +221,10 @@ const Navbar = ({
                     borderRadius: "0.5rem",
                     textTransform: "none",
                     "&:hover": {
-                      backgroundColor: "#424258 !important", // Override hover background color
+                      backgroundColor: "#424258 !important",
                     },
                     "&:active": {
-                      backgroundColor: "white !important", // Override active background color
+                      backgroundColor: "white !important",
                     },
                   }}
                   onClick={handleConnect}

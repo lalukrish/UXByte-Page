@@ -5,11 +5,11 @@ const LetsTalk = ({ theme, toggleTheme }) => {
   const router = useRouter();
   // Use the theme prop to conditionally apply styles
   const textColor = theme === "light" ? "text-[#0f0f0f]" : "text-white";
-  const buttonColor = theme === "light" ? "bg-[#0f0f0f] text-white" : "bg-white text-[#0f0f0f]";
+  const buttonColor =
+    theme === "light" ? "bg-[#0f0f0f] text-white" : "bg-white text-[#0f0f0f]";
   const backgroundColor = theme === "light" ? "bg-white" : "bg-[#0f0f0f]"; // Adjust background color based on theme
   const handleConnect = () => {
     router.push("/contact-us");
-    
   };
   return (
     <div
@@ -22,7 +22,7 @@ const LetsTalk = ({ theme, toggleTheme }) => {
         </span>
       </div>
       <div className="mx-auto max-w-xl ">
-        <p className=" text-2xl font-normal mb-8 " style={{ fontSize: 28 }}>
+        <p className=" text-2xl font-normal mb-8  p-4" style={{ fontSize: 28 }}>
           Get a personalized plan. Schedule a free consultation to discuss your
           specific needs.
         </p>
