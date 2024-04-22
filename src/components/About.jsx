@@ -1,10 +1,10 @@
 import { dark } from "@mui/material/styles/createPalette";
 import React from "react";
-import { Image } from 'react';
+import { Image } from "react";
 
 const About = ({ theme, toggleTheme }) => {
   const textColor = theme === "light" ? "text-black" : "text-white";
-  const headColor = theme === "light" ? "text-purple-800" : "text-purple-300"; 
+  const headColor = theme === "light" ? "text-purple-800" : "text-purple-300";
   const buttonColor = theme === "light" ? "bg-white" : "bg-gray-800";
   const backgroundColor = theme === "light" ? "bg-white" : "bg-[#0f0f0f]"; // Adjust background color based on theme
 
@@ -17,22 +17,25 @@ const About = ({ theme, toggleTheme }) => {
           About
         </span>
         <div className="md:block ml-4 gap-2">
-          { theme==="dark"? 
-          <img
-            src="https://res.cloudinary.com/dvjjzsilz/image/upload/v1711784029/atwww59mdcbnvxvpxmei.png"
-            className="h-38 w-36 md:w-48 md:hidden"
-            alt="image1"
-            // width={374}
-            // height={267}
-            style={{ width: '100%', height: '100%' }}
-          />:<img
-            src="/assets/aboutlight.png"
-            className="h-38 w-36 md:w-48 md:hidden"
-            alt="image"
-            // width={374}
-            // height={267}
-            style={{ width: '100%', height: '100%' }}
-          />}
+          {theme === "dark" ? (
+            <img
+              src="https://res.cloudinary.com/dvjjzsilz/image/upload/v1711784029/atwww59mdcbnvxvpxmei.png"
+              className="h-38 w-36 md:w-48 md:hidden"
+              alt="image1"
+              // width={374}
+              // height={267}
+              style={{ width: "100%", height: "100%" }}
+            />
+          ) : (
+            <img
+              src="/assets/aboutlight.png"
+              className="h-38 w-36 md:w-48 md:hidden"
+              alt="image"
+              // width={374}
+              // height={267}
+              style={{ width: "100%", height: "100%" }}
+            />
+          )}
         </div>
       </div>
 
@@ -46,7 +49,7 @@ const About = ({ theme, toggleTheme }) => {
               We&apos;re a team that gets fired up about innovation and creating
               awesome tech.
             </li>
-            <li className="mb-4 font-light" >
+            <li className="mb-4 font-light">
               <span className={` ${headColor} font-semibold`}>
                 End-to-End Expertise:
               </span>{" "}
@@ -61,7 +64,9 @@ const About = ({ theme, toggleTheme }) => {
               accessible to businesses of all sizes.
             </li>
             <li className="mb-4 font-light">
-              <span className={` ${headColor} font-semibold`}>Growth Focused:</span>{" "}
+              <span className={` ${headColor} font-semibold`}>
+                Growth Focused:
+              </span>{" "}
               We believe in the power of technology to drive success and are
               dedicated to helping businesses achieve their goals.
             </li>
@@ -77,21 +82,23 @@ const About = ({ theme, toggleTheme }) => {
         {/* Adjusted for medium screens */}
         <div className="hidden sm:block">
           <div className="flex justify-center md:col-span-1 md:mb-20">
-            {theme==="dark"? 
-            <img
-              src="/assets/aboutus.png"
-              className="h-80 w-80 md:w-80"
-              alt=""
-              width={100}
-              height={100}
-            />:<img
-            src="/assets/aboutlight.png"
-            className="h-80 w-80 md:w-80"
-            alt=""
-            width={100}
-            height={100}
-            />
-            }
+            {theme === "dark" ? (
+              <img
+                src="/assets/aboutus.png"
+                className="h-80 w-80 md:w-80"
+                alt=""
+                width={100}
+                height={100}
+              />
+            ) : (
+              <img
+                src="/assets/aboutlight.png"
+                className="h-80 w-80 md:w-80"
+                alt=""
+                width={100}
+                height={100}
+              />
+            )}
           </div>
         </div>
       </div>
