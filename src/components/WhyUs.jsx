@@ -109,7 +109,7 @@ const WhyUs = ({ theme, toggleTheme }) => {
               <Image
                 src="/assets/designer-working.svg"
                 alt=""
-                className={`filter ${imageColor} hover:invert`}
+                className={`filter ${imageColor} hover:brightness-75`}
                 width={180}
                 height={200}
               />
