@@ -19,20 +19,20 @@ const Hero = ({ theme, toggleTheme }) => {
   const colorsChangeButton =
     theme === "light" ? "bg-black text-white" : "bg-white text-black";
 
-  const controls = useAnimation();
-  const { ref, inView } = useInView({
-    triggerOnce: false,
-  });
+  // const controls = useAnimation();
+  // const { ref, inView } = useInView({
+  //   triggerOnce: false,
+  // });
 
-  useEffect(() => {
-    if (inView) {
-      controls.start({
-        x: [10, 40, 70, 90],
-        y: [50, 20, 50, 20],
-        transition: { duration: 8, loop: Infinity },
-      });
-    }
-  }, [controls, inView]);
+  // useEffect(() => {
+  //   if (inView) {
+  //     controls.start({
+  //       x: [10, 40, 70, 90],
+  //       y: [50, 20, 50, 20],
+  //       transition: { duration: 8, loop: Infinity },
+  //     });
+  //   }
+  // }, [controls, inView]);
 
   return (
     <div
@@ -73,7 +73,7 @@ const Hero = ({ theme, toggleTheme }) => {
           position: "relative", // Ensure relative positioning for containing the ball
         }}
       >
-        <motion.svg
+        {/* <motion.svg
           viewBox="0 0 100 100"
           style={{
             position: "absolute",
@@ -82,18 +82,18 @@ const Hero = ({ theme, toggleTheme }) => {
             width: "100%",
             height: "100%",
           }}
-        >
-          {/* SVG path outlines the stroke of the text */}
-          <motion.path
+        > */}
+        {/* SVG path outlines the stroke of the text */}
+        {/* <motion.path
             d="M 10 50 Q 25 20 40 50 Q 55 80 70 50 Q 85 20 90 50"
             fill="none"
             stroke="transparent"
             strokeWidth="1"
             animate={{ pathLength: 1, opacity: [0, 1] }}
             transition={{ duration: 2 }}
-          />
-          {/* Circle representing the ball */}
-          <motion.circle
+          /> */}
+        {/* Circle representing the ball */}
+        {/* <motion.circle
             ref={ref}
             cx="10"
             cy="50"
@@ -101,7 +101,7 @@ const Hero = ({ theme, toggleTheme }) => {
             fill="purple"
             animate={controls}
           />
-        </motion.svg>
+        </motion.svg> */}
         UXBYTE
       </h1>
       <div className="md:absolute ">
