@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const fadeInScaleRotate = {
-  initial: { opacity: 0, scale: 0.9, rotate: -5 },
+  initial: { opacity: 0, scale: 0.9 },
   animate: { opacity: 1, scale: 1, rotate: 0 },
 };
 
@@ -15,24 +15,27 @@ const Services = ({ theme, toggleTheme }) => {
   const [ref, inView] = useInView({
     triggerOnce: false,
   });
+  // const [ref1, inView1] = useInView({
+  //   triggerOnce: false,
+  // });
   return (
     <div
-      className={`py-20 text-center" id="services_id ${textColor} ${backgroundColor}`}
+      className={`py-20 text-center ${textColor} ${backgroundColor}`}
+      id="services_id"
     >
       <div className="text-6xl font-extrabold ">
-        <span className="bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent flex justify-center ">
+        <span className="bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent flex justify-center">
           Services
         </span>
       </div>
-      <div className="flex justify-center md:mt-0">
+      <div className="flex justify-center md:mt-4" ref={ref}>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 justify-items-center">
           <motion.div
-            ref={ref}
             className="text-4xl font-semibold service-item text-center"
             variants={fadeInScaleRotate}
             initial="initial"
             animate={inView ? "animate" : "initial"}
-            transition={{ delay: 0.2, duration: 0.5, ease: "easeOut" }}
+            transition={{ delay: 0.2, duration: 0.7, ease: "easeIn" }}
             style={{ marginLeft: "2rem" }}
           >
             <div className="text-start">
@@ -55,7 +58,7 @@ const Services = ({ theme, toggleTheme }) => {
             variants={fadeInScaleRotate}
             initial="initial"
             animate={inView ? "animate" : "initial"}
-            transition={{ delay: 0.4, duration: 0.6, ease: "easeOut" }}
+            transition={{ delay: 0.6, duration: 0.7, ease: "easeIn" }}
             style={{ marginLeft: "4rem" }}
           >
             <div className="text-start">
@@ -79,7 +82,7 @@ const Services = ({ theme, toggleTheme }) => {
             variants={fadeInScaleRotate}
             initial="initial"
             animate={inView ? "animate" : "initial"}
-            transition={{ delay: 0.6, duration: 0.4, ease: "easeOut" }}
+            transition={{ delay: 0.9, duration: 0.7, ease: "easeIn" }}
             style={{ marginLeft: "4rem" }}
           >
             <div className="text-start">
