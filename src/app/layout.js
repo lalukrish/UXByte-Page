@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
       </Head> */}
       <html>
         
-        <body className={inter.className}>{children}</body>
+        <body className={inter.className} style={{margin:"120px"}} >{children}</body>
       </html>
     </>
   );

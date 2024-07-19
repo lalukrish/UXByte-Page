@@ -134,7 +134,9 @@ const Hero = ({ theme, toggleTheme }) => {
       </div>
       <div className="mt-8  md:mt-16 md:mb-20">
         <button
-          className={`${colorsChangeButton} py-3 px-6 flex rounded-lg hover:bg-gray-800 my-4 md:my-0 font-semibold`}
+          className={`${colorsChangeButton} border hover:border-white hover:bg-transparent hover:text-white dark:hover:border-black dark:hover:bg-white dark:hover:text-black font-medium  flex rounded-lg text-2xl px-5 py-2.5 `}
+          // className={`${buttonColor} border hover:border-white hover:bg-transparent hover:text-white dark:hover:border-gray-200 font-medium rounded-lg text-2xl px-5 py-2.5`}
+
           onClick={handleConnect}
         >
           Let&apos;s Connect

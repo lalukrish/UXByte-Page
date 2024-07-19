@@ -29,7 +29,7 @@ const LetsTalk = ({ theme, toggleTheme }) => {
         <div className="flex items-center justify-center">
           <button
             type="button"
-            className={`${buttonColor} hover:bg-gray-800 dark:hover:bg-gray-200 font-medium rounded-lg text-2xl px-5 py-2.5`}
+            className={`${buttonColor} border hover:border-white hover:bg-transparent hover:text-white dark:hover:border-gray-200 font-medium rounded-lg text-2xl px-5 py-2.5`}
             onClick={handleConnect}
           >
             Design a Quote
