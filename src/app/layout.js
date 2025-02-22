@@ -1,16 +1,19 @@
-import { Inter } from "next/font/google";
+import { K2D } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import Head from "next/head";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "UXByte Studio",
   description: "",
   icon: "/favicon.ico",
 };
+
+const k2dFont = K2D({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 
 export default function RootLayout({ children }) {
   return (
@@ -19,8 +22,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head> */}
       <html>
-        
-        <body className={inter.className}>{children}</body>
+        <body className={k2dFont.className}>{children}</body>
       </html>
     </>
   );
