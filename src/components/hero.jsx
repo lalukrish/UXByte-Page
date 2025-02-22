@@ -99,7 +99,7 @@ const Hero = ({ theme, toggleTheme }) => {
           Welcome to UXByte
         </p>
       </div>
-      <span className="md:mb-60">
+      <span className="md:mb-60 xs:mb-90">
         <h1
           className="text-7xl md:text-9xl font-bold text-transparent whitespace-nowrap "
           style={{
@@ -174,9 +174,20 @@ const Hero = ({ theme, toggleTheme }) => {
       </div> */}
       <Grid container spacing={1} sx={{ mt: { md: -20 } }}>
         {/* Left Section */}
-        <Grid item md={6} xs={12}>
-          <Box sx={{ mx: 8, mt: { md: -10 } }}>
-            <Typography variant="h4" component="div">
+        <Grid
+          item
+          md={6}
+          xs={12}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
+            textAlign: { xs: "center", md: "start" }, // Ensures text is centered
+          }}
+        >
+          <Box sx={{ mx: { md: 8, xs: 4 }, mt: { md: -19 } }}>
+            <Typography component="div" sx={{ fontSize: { md: 32, xs: 20 } }}>
               <span className="bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent">
                 Code{" "}
               </span>
@@ -187,15 +198,19 @@ const Hero = ({ theme, toggleTheme }) => {
               the Experience.
             </Typography>
             <Box sx={{ width: { md: 480 } }}>
-              <Typography variant="body1" mt={2}>
+              <Typography mt={2} sx={{ fontSize: { md: 18, xs: 16 } }}>
                 We bridge the gap between cutting-edge design and powerful
                 development. From sleek websites & intuitive apps, we empower
                 your brand to thrive in the ever-evolving digital landscape.
               </Typography>
               <Box
-                sx={{ mt: 1, justifyContent: "center", alignItems: "center" }}
+                sx={{
+                  mt: 2,
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
               >
-                {" "}
                 <Button
                   variant="contained"
                   sx={{ color: "black", backgroundColor: "white" }}
@@ -224,7 +239,14 @@ const Hero = ({ theme, toggleTheme }) => {
             // height: 250,
           }}
         >
-          <Typography sx={{ fontSize: 32, fontWeight: 600, color: "white" }}>
+          <Typography
+            sx={{
+              fontSize: { md: 32, xs: 18, fontStyle: "italic" },
+              fontWeight: 600,
+              color: "white",
+              mt: { xs: 17 },
+            }}
+          >
             Happy Clients
           </Typography>
 
