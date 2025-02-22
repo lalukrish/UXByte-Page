@@ -233,7 +233,7 @@ const Hero = ({ theme, toggleTheme }) => {
             alignItems: "center",
             justifyContent: "center",
             flexDirection: "column",
-            mt: -10,
+            mt: { md: -40 },
             // mx: "auto",
             width: "100%",
             // height: 250,
