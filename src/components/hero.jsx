@@ -244,7 +244,7 @@ const Hero = ({ theme, toggleTheme }) => {
               fontSize: { md: 32, xs: 18, fontStyle: "italic" },
               fontWeight: 600,
               color: "white",
-              mt: { xs: 17 },
+              mt: { xs: 18 },
             }}
           >
             Happy Clients
